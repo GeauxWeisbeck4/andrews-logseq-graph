@@ -28,3 +28,4 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 		- ```javascript
 		  const _getHeight = (tree) => (isEmpty(tree) ? 0: tree.height);
 		  ```
+			- Given a `tree` arg, this fx returns 0 if the tree is empty, otherwise it returns the tree's height attribute

@@ -377,4 +377,6 @@ tags:: Beej Guides, C, Tutorial
 							- if `x == 2`, we just hit `case 2`, print `2` and `break` like normal
 					- > **ProTip**
 					  > Always put a comment in the code if you intend to fall through like above. That way other programmers won't have to guess if it was intentional or not!
+					- One of the common places to introduce bugs in C programs - forgetting to add a `break` in a `case`
+					- Use `switch` only with integer types because there is a loop-hole where you can use character types because they are secretly integers themselves:
 					-

@@ -147,4 +147,10 @@ tags:: Beej Guides, C, Tutorial
 					    printf("Success!\n");
 					  ```
 		- ### 3.2.6 Boolean Operators
-			- Chaning together or altering conditional expressions w/ Boolean operators for *and*,
+			- Chaining together or altering conditional expressions w/ Boolean operators for *and*, *or*, and *not*
+				- | Operator | Boolean meaning |
+				  |--------|
+				  | && | and |
+				  | ||`` | or | 
+				  | ! | not |
+				-

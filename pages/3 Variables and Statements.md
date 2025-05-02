@@ -249,3 +249,7 @@ tags:: Beej Guides, C, Tutorial
 				  
 				  
 				  ```
+					- Worth checking out the `switch` statement here for better solution
+		- ### 3.3.2 The `while` statement
+			- ```c
+			  ```

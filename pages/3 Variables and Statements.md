@@ -15,3 +15,4 @@ tags:: Beej Guides, C, Tutorial
 			  | String | "Hello, world!" | char * |
 				- C makes an effort to convert auto. between most numeric types when you ask it to
 				- Uninitialized variables have indeterminate value - if they are not, they must assume it can be some nonsense number
+			- For our example code, we are going to use the `printf()` function to print out

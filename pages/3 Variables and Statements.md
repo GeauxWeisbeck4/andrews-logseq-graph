@@ -341,4 +341,18 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 		- ### 3.3.5 The `switch` statement
 			- Evaluate an expression to an integer value, jump to the case that corresponds to that value. Execution resumes from that point - if `break` statement is encountered, execution jumps out of the `switch`:
-				- Example in code `switch.c`
+				- Example in code `switch.c` -> *Note, `default` is optional
+			- Acts like an `if-else` cascade:
+				- ```c
+				  if (goat_count == 0)
+				      printf("You have no goats.\n");
+				  else if (goat_count == 1)
+				      printf("You have a singular goat.\n");
+				  else if (goat_count == 2)
+				      printf("You have a brace of goats.\n");
+				  else
+				      printf("You have a bona fide plethora of goats!\n");
+				  ```
+				- With these differences:
+					- `switch` is often faster to jump to the correct code (but spec doesn't guarantee this)
+					- `if-else` can do things like relational conditionals like < and >

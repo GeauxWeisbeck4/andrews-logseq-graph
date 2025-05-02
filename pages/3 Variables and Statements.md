@@ -200,4 +200,9 @@ tags:: Beej Guides, C, Tutorial
 			  ```
 		- Now let's try multiple things to happen - block or compound statement
 			- ```c
+			  if (x == 10) {
+			    printf("x is 10\n");
+			    printf("And also this happens when x is 10\n");
+			  }
 			  ```
+			- Always wrap in squirrelly braces if doing blocks and compound statements

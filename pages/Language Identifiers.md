@@ -1,7 +1,7 @@
 tags:: VS Code, Programming Languages, Doc Subtopic
 
 - docs:: [[VS Code]]
-- topic:: [[Languages]]
+- topic:: [[VS Code Docs - Languages]]
 - # Language Identifiers
 	- In Visual Studio Code, each [language mode](/docs/languages/overview.md#changing-the-language-for-the-selected-file) has a unique specific language identifier. That identifier is rarely seen by the user except in the settings, for example, when associating file extensions to a language:
 	  

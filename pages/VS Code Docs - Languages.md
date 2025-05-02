@@ -1,4 +1,5 @@
 tags:: VS Code, Programming Languages
+title:: VS Code Docs - Languages
 
 - docs:: [[VS Code]]
 - # Languages

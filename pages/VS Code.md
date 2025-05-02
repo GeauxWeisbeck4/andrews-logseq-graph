@@ -9,5 +9,5 @@ tags:: VS Code, IDE, Dev Tools
 	- ## Source Control
 	- ## Terminal
 	- ## Github Co-Pilot
-	- ## [[Languages]]
+	- ## [[VS Code Docs - Languages]]
 	-

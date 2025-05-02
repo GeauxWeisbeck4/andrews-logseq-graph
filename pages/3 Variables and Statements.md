@@ -126,4 +126,18 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 			- It is often used in for loops to do multiple things w/ each section of the statement
 				- ```c
+				  for (i = 0, j = 10; i < 100; i++, j++)
+				    printf("%d, %d\n", i, j);
 				  ```
+		- ### 3.2.5 Conditional Operators
+			- For boolean values, we have raft of standard operators:
+				- ```c
+				  a == b;  // True if a is equivalent to b
+				  a != b;  // True if a is not equivalent to b
+				  a < b;   // True if a is less than b
+				  a > b;   // True if a is greater than b
+				  a <= b;  // True if a is less than or equal to b
+				  a >= b;  // True if a is greater than or equal to b
+				  ```
+			- = is assignment
+			-

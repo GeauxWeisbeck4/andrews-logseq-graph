@@ -355,4 +355,20 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 				- With these differences:
 					- `switch` is often faster to jump to the correct code (but spec doesn't guarantee this)
-					- `if-else` can do things like relational conditionals like < and >
+					- `if-else` can do things like relational conditionals like < and >= and floating point and other types while `switch` cannot
+			- `switch` also has a thing called a *fall-through*
+				- What if we don't break?
+					- We just keep going to the next case!
+						- ```c
+						  switch (x) {
+						      case 1:
+						          printf("1\n");
+						          // Fall through!
+						      case 2:
+						          printf("2\n");
+						          break;
+						      case 3:
+						          printf("3\n");
+						          break;
+						  }
+						  ```

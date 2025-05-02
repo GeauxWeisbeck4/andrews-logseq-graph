@@ -161,4 +161,7 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 			- Ex boolean *not*:
 				- ```c
+				  if (!(x < 12))
+				    printf("x is not less than 12\n");
 				  ```
+				- `!` has higher order of precedence the

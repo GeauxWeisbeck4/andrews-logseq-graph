@@ -31,4 +31,6 @@ tags:: Beej Guides, C, Tutorial
 					      printf("%s i = %d and f = %f!\n", s, i, f);
 					  }
 					  ```
-		- ### 3.1.
+		- ### 3.1.3 Boolean Types
+			- In C, 0 = "false" & non-zero = "true"
+			- You can declare boolean types as ints

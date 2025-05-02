@@ -73,12 +73,15 @@ tags:: Beej Guides, C, Tutorial
 					  ```
 		- ### 3.2.3 Pre-and-Post Increment-and-Decrement
 			- The legendary post-increment and post-decrement operators:
-				- *Post
-				- ```c
-				  i++;  // Add one to i (post-increment)
-				  i--;  // Subtract one from i (post-decrement)
-				  
-				  // Longerversion of the above
-				  i += 1;
-				  i -= 1;
-				  ```
+				- **Post Increment and Decrement**
+					- ```c
+					  i++;  // Add one to i (post-increment)
+					  i--;  // Subtract one from i (post-decrement)
+					  
+					  // Longerversion of the above
+					  i += 1;
+					  i -= 1;
+					  ```
+				- **Pre Increment and Decrement**
+					- ```c
+					  ```

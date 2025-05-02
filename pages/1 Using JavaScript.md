@@ -15,4 +15,8 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 	- ## Arrow Functions
 		- There are many ways to specify fx in JavaScript
 			- Named functions -> `function alpha() {...}`
-			- Nameless function expressions ->
+			- Nameless function expressions -> `const bravo = function () {...}`
+			- Named function expressions -> `const charlie = function something() {...}`
+			- Function constructors -> `const delta = new Function()`
+			- Arrow functions -> `const echo = () => {...}`
+			-

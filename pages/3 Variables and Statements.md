@@ -185,5 +185,8 @@ tags:: Beej Guides, C, Tutorial
 					  printf("%zu\n", sizeof 3.14);  // prints 8
 					         
 					  // Negative size_t values = %zd
+					  printf("%zu\n", sizeof(int));  // prints 4
+					  printf("%zu\n", sizeof(char));  // prints 1
 					  ```
-						- Its the sie
+						- Its the size in bytes of type of expression - that's why a and 2+7 are the same -> they're both type int
+						- Note that i

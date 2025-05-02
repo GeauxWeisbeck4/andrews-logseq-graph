@@ -12,4 +12,5 @@ tags:: Beej Guides, C, Tutorial
 			  | Integer | 3490 | int |
 			  | Floating point | 3.14159 | float |
 			  | Character (single) | 'c' | char |
-			  | String | "Hello, world!
+			  | String | "Hello, world!" | char * |
+				- C makes an effort to convert auto. between most numeric types when you ask it to

@@ -140,4 +140,11 @@ tags:: Beej Guides, C, Tutorial
 				  a >= b;  // True if a is greater than or equal to b
 				  ```
 			- = is assignment
-			-
+			- == is comparison
+				- Example of comparison in if statements
+					- ```c
+					  if (a <= 10)
+					    printf("Success!\n");
+					  ```
+		- ### 3.2.6 Boolean Operators
+			- Chaning together or altering conditional expressions w/ Boolean operators for *and*,

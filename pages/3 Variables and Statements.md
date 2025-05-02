@@ -340,4 +340,5 @@ tags:: Beej Guides, C, Tutorial
 				  }
 				  ```
 		- ### 3.3.5 The `switch` statement
-			- Evaluate an expression to an integer value, jump to the case that corresponds to that value
+			- Evaluate an expression to an integer value, jump to the case that corresponds to that value. Execution resumes from that point - if `break` statement is encountered, execution jumps out of the `switch`:
+				- Example in code `switch.c`

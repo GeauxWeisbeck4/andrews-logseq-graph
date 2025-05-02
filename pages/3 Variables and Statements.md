@@ -274,4 +274,5 @@ tags:: Beej Guides, C, Tutorial
 				    printf("1 is always true, so this repeats forever.\n");
 				  }
 				  ```
-		- ### 3.3.3 The ``
+		- ### 3.3.3 The `do-while` statement
+			- If false on first pass, while wo't execute at all -> we see if we can execute or not execute the block at the end of the

@@ -103,4 +103,7 @@ tags:: Beej Guides, C, Tutorial
 						  
 						  printf("%d, %d\n", i, j);  // Prints 11, 16
 						  ```
-							-
+							- Frequently used with array and pointer access and manipulation -> provides way to use value in a variable while incrementing or decrement the value before or after it is used.
+						- Most common place however is in a for loop
+							- ```c
+							  ```

@@ -24,4 +24,7 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- They cannot be used as constructors or generators
 			- They don't bind the `this` value
 			- They don't have an `arguments` object or a `prototype` object
-		-
+		- This will be used a lot in this book (first argument):
+		- ```javascript
+		  const _getHeight = (tree) => (isEmpty(tree) ? 0: tree.height);
+		  ```

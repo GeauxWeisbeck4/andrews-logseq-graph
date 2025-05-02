@@ -42,4 +42,17 @@ tags:: Beej Guides, C, Tutorial
 	- ## 3.2 Operators and Expressions
 		- similar to other languages
 		- ### 3.2.1 Arithmetic
-		-
+			- ```c
+			  i = i + 3;  // Addition (+) and assignment (=) operators, add 3 to i
+			  i = i - 8;  // Subtraction, subtract 8 from i
+			  i = i * 9;  // Multiplication
+			  i = i / 2;  // Division
+			  i = i % 5;  // Modulo (division remainder)
+			  
+			  i += 3;  // Same as "i = i + 3", add 3 to i
+			  i -= 8;  // Same as "i = i - 8"
+			  i *= 9;  // Same as "i = i * 9"
+			  i /= 2;  // Same as "i = i / 2"
+			  i %= 5;  // Same as "i = i % 5"
+			  ```
+				- There is no exponentiation

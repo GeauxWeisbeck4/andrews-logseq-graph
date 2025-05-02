@@ -175,4 +175,15 @@ tags:: Beej Guides, C, Tutorial
 			- C has a special type to represent the return value from `sizeof` -> `size_t` -> unsigned integer type that can hold the size in bytes of anything you give it in `sizeof`
 				- `size_t` shows up a lot of diff places where counts of things are passed or returned -> think of it as returning a count
 					- ```c
+					  int a = 999;
+					  
+					  // %zu format specifier for size_t
+					  // Leave off "z" if compiler gets mad
+					  
+					  printf("%zu\n", sizeof a);  // prints 4
+					  printf("%zu\n", sizeof(2 + 7));  // prints 4
+					  printf("%zu\n", sizeof 3.14);  // prints 8
+					         
+					  // Negative size_t values = %zd
 					  ```
+						- Its the sie

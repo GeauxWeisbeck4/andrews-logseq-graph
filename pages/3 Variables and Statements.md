@@ -92,10 +92,15 @@ tags:: Beej Guides, C, Tutorial
 					- The value of expression is done with the value as is, then the value is done after the expression determined - you can embed them in expressions
 						- ```c
 						  i = 10;
-						  j = 5 + i++;
+						  j = 5 + i++;  // Compute 5 + i, them increment i
 						  
-						  printf(%d, %d\n", i, j);
+						  printf(%d, %d\n", i, j);  // prints 11, 15
 						  ```
 					- Compare that to the pre-increment
 						- ```c
+						  i = 10;
+						  j = 5 + ++i;  // Increment i, them computer 5 + i
+						  
+						  printf("%d, %d\n", i, j);  // Prints 11, 16
 						  ```
+							-

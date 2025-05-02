@@ -114,4 +114,9 @@ tags:: Beej Guides, C, Tutorial
 				- ```c
 				  x = 10, y = 20;  // First assign 10 to x, then 20 to y
 				  ```
-			- This one is two
+			- This one is two  separate expressions:
+				- ```c
+				  x = 10; y = 20;  // First assign 10 to x, then 20 to y
+				  ```
+			- In the comma operator, the value of the comma expression is value of rightmost expression
+				-

@@ -55,4 +55,8 @@ tags:: Beej Guides, C, Tutorial
 			  i /= 2;  // Same as "i = i / 2"
 			  i %= 5;  // Same as "i = i % 5"
 			  ```
-				- There is no exponentiation
+				- There is no exponentiation -> use one of the pow() unction variants from `math.h`
+			- ### 3.2.2 Ternary Operator
+				- Expression whose value depends on the result of a conditional embedded in it
+					- ```c
+					  ```

@@ -19,14 +19,13 @@ tags:: Fediverse, Glitch, Activity Pub
 		  platforms, but by far not the only one. In fact, there are multiple 
 		  standardized, open protocols that implement federation, such as Activity
 		  Pub, the one used by Mastodon.
-	-
-	-
-	- **🎏 Fediverse community and posting tools**
-	- [~fediring](https://glitch.com/~fediring) - static site generator that builds a linked ring of verified fediverse profiles, used by creator to make
-	- [~bottlenose-bubble-talon](https://glitch.com/~bottlenose-bubble-talon) - Fediverse webring
-	- [~steep-parade](https://glitch.com/~steep-parade) - mastodon to twitter tool
-	  
-	  **🔎 Search tools**
-	- [~nostr-twit](https://glitch.com/~nostr-twit) - nostr-twitter bridge
-	- [~fedifinder](https://glitch.com/~fedifinder) - using your twitter account, search the fediverse for the handles of people you follow (our most viral app)
-	- [~yesindex](https://glitch.com/~yesindex) - indexes posts (affectionately called toots) from your mutuals
+- ## Tools and Resources
+	- ### **🎏 Fediverse community and posting tools**
+		- [~fediring](https://glitch.com/~fediring) - static site generator that builds a linked ring of verified fediverse profiles, used by creator to make
+		- [~bottlenose-bubble-talon](https://glitch.com/~bottlenose-bubble-talon) - Fediverse webring
+		- [~steep-parade](https://glitch.com/~steep-parade) - mastodon to twitter tool
+	- ### **🔎 Search tools**
+		- [~nostr-twit](https://glitch.com/~nostr-twit) - nostr-twitter bridge
+		- [~fedifinder](https://glitch.com/~fedifinder) - using your twitter account, search the fediverse for the handles of people you follow (our most viral app)
+		- [~yesindex](https://glitch.com/~yesindex) - indexes posts (affectionately called toots) from your mutuals
+-

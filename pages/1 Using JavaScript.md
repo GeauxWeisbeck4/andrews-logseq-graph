@@ -19,4 +19,9 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- Named function expressions -> `const charlie = function something() {...}`
 			- Function constructors -> `const delta = new Function()`
 			- Arrow functions -> `const echo = () => {...}`
-			-
+		- Arrow functions are different b/c:
+			- They may return a value w/out a `return` statement
+			- They cannot be used as constructors or generators
+			- They don't bind the `this` value
+			- They don't have an `arguments` object or a `prototype` object
+		-

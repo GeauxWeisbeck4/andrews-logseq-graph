@@ -171,4 +171,5 @@ tags:: Beej Guides, C, Tutorial
 					  ```
 		- ### 3.2.7 The `sizeof` Operator
 			- Tells you the size (in bytes) that a variable or data type uses in memory
-				- More particularly, the size (in bytes) that the type of a particular expression (might even be a single variable)
+				- More particularly, the size (in bytes) that the type of a particular expression (might even be a single variable) uses in memory
+			- C has a special type to represent the return value from `sizeof` -> `size_t` -> unsigned integer type that can hold the size in bytes of anything you give it in `sizeof`

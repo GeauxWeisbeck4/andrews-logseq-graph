@@ -40,9 +40,9 @@ tags:: Fediverse, Glitch, Activity Pub
 		- [~please-caption-mastodon](https://glitch.com/~please-caption-mastodon) - bot that reminds you to use image descriptions because accessibility helps us all
 		- [~owncast-mastodon-announce](https://glitch.com/~owncast-mastodon-announce) - post your Go Live events from your Owncast to the fediverse
 	- ### **👉 ActivityPub Projects besides Mastodon**
-	- [~activitypub-starter-kit](https://glitch.com/edit/#!/activitypub-starter-kit) - get started with activitypub!
-	- [~activitypub](https://glitch.com/~activitypub) - a very helpful debugging tool for activitypub
-	- [~suave-knowledgeable-crepe](https://glitch.com/~suave-knowledgeable-crepe) - convert rss to activitypub
+		- [~activitypub-starter-kit](https://glitch.com/edit/#!/activitypub-starter-kit) - get started with activitypub!
+		- [~activitypub](https://glitch.com/~activitypub) - a very helpful debugging tool for activitypub
+		- [~suave-knowledgeable-crepe](https://glitch.com/~suave-knowledgeable-crepe) - convert rss to activitypub
 	- [~activitypub-viewer](https://glitch.com/~activitypub-viewer) - view real-world ActivityPub objects as JSON
 	- [~activitypub-json-feed](https://glitch.com/~activitypub-json-feed) - ActivityPub outboxes into reformatted JSON feeds, inspired by micro.blog
 	- [~walnut-hail-cloche](https://glitch.com/~walnut-hail-cloche) - a single instance server, remix it to create your own!

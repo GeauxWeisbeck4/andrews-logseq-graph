@@ -379,4 +379,22 @@ tags:: Beej Guides, C, Tutorial
 					  > Always put a comment in the code if you intend to fall through like above. That way other programmers won't have to guess if it was intentional or not!
 					- One of the common places to introduce bugs in C programs - forgetting to add a `break` in a `case`
 					- Use `switch` only with integer types because there is a loop-hole where you can use character types because they are secretly integers themselves:
-					-
+						- ```c
+						  char c = 'b';
+						  
+						  switch (c) {
+						      case 'a':
+						          printf("It's 'a'!\n");
+						          break;
+						  
+						      case 'b':
+						          printf("It's 'b'!\n");
+						          break;
+						  
+						      case 'c':
+						          printf("It's 'c'!\n");
+						          break;
+						  }
+						  ```
+					- You can also use `enums` since they are integer types
+-

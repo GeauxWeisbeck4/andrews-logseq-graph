@@ -372,3 +372,6 @@ tags:: Beej Guides, C, Tutorial
 						          break;
 						  }
 						  ```
+							- if `x == 1`, we'll hit `case 1` and print `1`, then continues to the next line of code printing `2`
+								- Then at last we hit a `break` and jump out of `switch`
+							- if `x == 2`, we just hit

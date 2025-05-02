@@ -42,4 +42,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- If you use short version and want to return an object, enclose it in parentheses
 		- #### Example `arrow3.js`
 			- Provide default value for missing parameters -> this example will initialize an `s` with an empty string if no value is provided for the recursive part
-		-
+	- ## Classes
+		- Won't spend a lot of time here - reference Objects and Classes in MDN

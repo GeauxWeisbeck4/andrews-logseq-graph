@@ -252,4 +252,26 @@ tags:: Beej Guides, C, Tutorial
 					- Worth checking out the `switch` statement here for better solution
 		- ### 3.3.2 The `while` statement
 			- ```c
+			  // Print the following output
+			  // 
+			  //	i is now 0!
+			  //	i is now 1!
+			  //	[ more of the same between 2 and 7]
+			  // 	i is now 8!
+			  //  i is now 9!
+			  int i = 0;
+			  
+			  while (i < 10) {
+			    printf("i is now %d!\n", i);
+			    i++;
+			  }
+			  
+			  printf("All done!\n");
 			  ```
+			- A common use case is infinite loops where you repeat while true
+				- ```c
+				  while (1) {
+				    printf("1 is always true, so this repeats forever.\n");
+				  }
+				  ```
+		- ### 3.3.3 The ``

@@ -1,3 +1,4 @@
 tags:: VS Code, Programming Languages
 
-- vscod
+- docs:: [[VS Code]]
+- subtopics

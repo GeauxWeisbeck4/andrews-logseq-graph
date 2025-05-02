@@ -91,4 +91,11 @@ tags:: Beej Guides, C, Tutorial
 					- Pre the value of the variable is done before the expression is evaluated, then it is evaluated
 					- The value of expression is done with the value as is, then the value is done after the expression determined - you can embed them in expressions
 						- ```c
+						  i = 10;
+						  j = 5 + i++;
+						  
+						  printf(%d, %d\n", i, j);
+						  ```
+					- Compare that to the pre-increment
+						- ```c
 						  ```

@@ -211,6 +211,12 @@ tags:: Beej Guides, C, Tutorial
 			  int i = 10;
 			  
 			  if (i > 10) {
-			    
+			    printf("x is 10\n");
+			    printf("And also this happens when x is 10\n");
 			  }
+			  
+			  if (i <= 10) printf("i is less than or equal to 10.\n");
 			  ```
+			- What if we want to do something if the condition is false with an `else` clause on our `if`?
+				- ```c
+				  ```

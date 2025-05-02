@@ -59,4 +59,17 @@ tags:: Beej Guides, C, Tutorial
 			- ### 3.2.2 Ternary Operator
 				- Expression whose value depends on the result of a conditional embedded in it
 					- ```c
+					  // If x > 10, add 17 to y. Otherwise add 37 to y.
+					  y += x > 10? 17: 37;
+					  
+					  // Rewritten as if statements
+					  if (x > 10)
+					    y += 17;
+					  else
+					    y += 37;
+					  
+					  // Another example that prints if number stored in x is odd or even
+					  printf("The number %d is %s.\n", x, x % 2 == 0? "even": "odd");
 					  ```
+		- ### 3.2.3 Pre-and-Post Increment-and-Decrement
+			-

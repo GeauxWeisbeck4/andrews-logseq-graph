@@ -41,5 +41,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 		- #### Example `arrow2.js`
 			- If you use short version and want to return an object, enclose it in parentheses
 		- #### Example `arrow3.js`
-			- Provide default value for missing parameters
+			- Provide default value for missing parameters -> this example will initialize an `s` with an empty string if no value is provided for the recursive part
 		-

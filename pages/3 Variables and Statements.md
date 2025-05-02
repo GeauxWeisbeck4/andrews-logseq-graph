@@ -155,4 +155,10 @@ tags:: Beej Guides, C, Tutorial
 				  | ! | not |
 			- Ex boolean *and*:
 				- ```c
+				  // Do something i x less than 10 and y greater than 20
+				  if (x < 10 && y > 20)
+				    printf("Doing something!\n");
+				  ```
+			- Ex boolean *not*:
+				- ```c
 				  ```

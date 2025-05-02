@@ -50,8 +50,7 @@ tags:: Fediverse, Glitch, Activity Pub
 	- ### **▶️ Glitch Playlists**
 		- [https://glitch.com/@andypiper/fediverse-fun](https://glitch.com/@andypiper/fediverse-fun)
 		- [https://glitch.com/@Luca/discovering-the-fediverse](https://glitch.com/@Luca/discovering-the-fediverse)
-		- [https://glitch.com/@glitch/fediverse-of-madness](https://glitch.com/@glitch/fediverse-of-madness)
-			- which has been updated to include everything recommended above!
-			  Have you created something for the fediverse? Let us know so we can 
-			  share it here, add it to a playlist, or feature it on the blog. Reach 
-			  out to us [@glitchdotcom@mastodon.social](https://mastodon.social/@glitchdotcom) and let us know!
+		- [https://glitch.com/@glitch/fediverse-of-madness](https://glitch.com/@glitch/fediverse-of-madness) which has been updated to include everything recommended above!
+		  Have you created something for the fediverse? Let us know so we can 
+		  share it here, add it to a playlist, or feature it on the blog. Reach 
+		  out to us [@glitchdotcom@mastodon.social](https://mastodon.social/@glitchdotcom) and let us know!

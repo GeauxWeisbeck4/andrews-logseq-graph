@@ -72,4 +72,13 @@ tags:: Beej Guides, C, Tutorial
 					  printf("The number %d is %s.\n", x, x % 2 == 0? "even": "odd");
 					  ```
 		- ### 3.2.3 Pre-and-Post Increment-and-Decrement
-			-
+			- The legendary post-increment and post-decrement operators:
+				- *Post
+				- ```c
+				  i++;  // Add one to i (post-increment)
+				  i--;  // Subtract one from i (post-decrement)
+				  
+				  // Longerversion of the above
+				  i += 1;
+				  i -= 1;
+				  ```

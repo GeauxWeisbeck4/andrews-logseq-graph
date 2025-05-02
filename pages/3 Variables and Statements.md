@@ -119,4 +119,11 @@ tags:: Beej Guides, C, Tutorial
 				  x = 10; y = 20;  // First assign 10 to x, then 20 to y
 				  ```
 			- In the comma operator, the value of the comma expression is value of rightmost expression
-				-
+				- ```c
+				  x = (1, 2, 3);
+				  
+				  printf("x is %d\n", x);  // Prints 3, b/c 3 is rightmost in the comma list
+				  ```
+			- It is often used in for loops to do multiple things w/ each section of the statement
+				- ```c
+				  ```

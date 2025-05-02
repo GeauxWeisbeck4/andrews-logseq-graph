@@ -7,3 +7,4 @@ tags:: Beej Guides, C, Tutorial
 		- ### 3.1.1 Variable Names
 			- Can't start with digit, two underscores, or underscore w/ capital
 		- ### 3.1.2 Variable Types
+			- | Type | Example |

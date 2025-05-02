@@ -33,4 +33,5 @@ tags:: Beej Guides, C, Tutorial
 					  ```
 		- ### 3.1.3 Boolean Types
 			- In C, 0 = "false" & non-zero = "true"
-			- You can declare boolean types as ints
+			- You can declare boolean types as ints but...
+				- Technically you should be setting a `bool` value to `true` or `false`, or the resul tof some expression that evalua

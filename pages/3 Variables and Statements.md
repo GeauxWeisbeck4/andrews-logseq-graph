@@ -106,4 +106,12 @@ tags:: Beej Guides, C, Tutorial
 							- Frequently used with array and pointer access and manipulation -> provides way to use value in a variable while incrementing or decrement the value before or after it is used.
 						- Most common place however is in a for loop
 							- ```c
+							  for (i = 0; i < 10; i++)
+							    printf("i is %d\n", i);
 							  ```
+		- ### 3.2.4 The Comma Operator
+			- This is one expression:
+				- ```c
+				  x = 10, y = 20;  // First assign 10 to x, then 20 to y
+				  ```
+			- This one is two

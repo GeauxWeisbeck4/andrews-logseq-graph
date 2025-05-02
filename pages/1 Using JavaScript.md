@@ -26,9 +26,15 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- They don't have an `arguments` object or a `prototype` object
 		- This will be used a lot in this book (first argument):
 		- ```javascript
+		  // arrow1.js
 		  const _getHeight = (tree) => (isEmpty(tree) ? 0: tree.height);
 		  ```
 			- Given a `tree` arg, this fx returns 0 if the tree is empty, otherwise it returns the tree's `height` attribute
 			- This example uses `return` and is an equivalent, but longer way to write it
 				- ```javascript
+				  // arrow1.py
+				  const _getHeight = (tree) => {
+				    return isEmpty(tree) ? 0 : tree.height;
+				  };
 				  ```
+		- If you use short version and want to return an object, enclose it in parentheses

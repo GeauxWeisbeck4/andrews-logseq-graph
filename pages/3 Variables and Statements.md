@@ -339,4 +339,5 @@ tags:: Beej Guides, C, Tutorial
 				      printf("Or until you hit CTRL-C.\n");
 				  }
 				  ```
+		- ### 3.3.5 The `switch` statement
 		-

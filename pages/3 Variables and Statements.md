@@ -206,3 +206,11 @@ tags:: Beej Guides, C, Tutorial
 			  }
 			  ```
 			- Always wrap in squirrelly braces if doing blocks and compound statements
+		- ### The `if-else` statement
+			- ```c
+			  int i = 10;
+			  
+			  if (i > 10) {
+			    
+			  }
+			  ```

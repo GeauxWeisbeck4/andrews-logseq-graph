@@ -173,3 +173,6 @@ tags:: Beej Guides, C, Tutorial
 			- Tells you the size (in bytes) that a variable or data type uses in memory
 				- More particularly, the size (in bytes) that the type of a particular expression (might even be a single variable) uses in memory
 			- C has a special type to represent the return value from `sizeof` -> `size_t` -> unsigned integer type that can hold the size in bytes of anything you give it in `sizeof`
+				- `size_t` shows up a lot of diff places where counts of things are passed or returned -> think of it as returning a count
+					- ```c
+					  ```

@@ -4,3 +4,10 @@ tags:: VS Code, IDE, Dev Tools
 	- ## Setup
 	- ## Get Started
 	- ## Configure
+	- ## Edit Code
+	- ## Build, Debug, Test
+	- ## Source Control
+	- ## Terminal
+	- ## Github Co-Pilot
+	- ## [[Languages]]
+	-

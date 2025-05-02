@@ -164,4 +164,6 @@ tags:: Beej Guides, C, Tutorial
 				  if (!(x < 12))
 				    printf("x is not less than 12\n");
 				  ```
-				- `!` has higher order of precedence the
+				- `!` has higher order of precedence than other boolean ops so we have to use parentheses in that case -> but its the same as:
+					- ```c
+					  ```

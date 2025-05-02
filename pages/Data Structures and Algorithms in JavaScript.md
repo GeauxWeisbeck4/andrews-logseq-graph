@@ -14,4 +14,5 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	  functional programming (FP) for design insights, abstract data types 
 	  (ADTs) as they relate to data structures, and the concept of algorithm 
 	  performance, which plays a crucial role when designing for efficiency.
-	- ##
+	- ## [[1 Using JavaScript]]
+	-

@@ -28,4 +28,4 @@ tags:: Fediverse, Glitch, Activity Pub
 		- [~nostr-twit](https://glitch.com/~nostr-twit) - nostr-twitter bridge
 		- [~fedifinder](https://glitch.com/~fedifinder) - using your twitter account, search the fediverse for the handles of people you follow (our most viral app)
 		- [~yesindex](https://glitch.com/~yesindex) - indexes posts (affectionately called toots) from your mutuals
--
+		- [~MastoVue](https://glitch.com/~small-languid-centipede) - Peek into any public Mastodon Timeline or search for Hashtags

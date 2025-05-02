@@ -151,6 +151,8 @@ tags:: Beej Guides, C, Tutorial
 				- | Operator | Boolean meaning |
 				  |--------|
 				  | && | and |
-				  | ||`` | or | 
+				  | `two straight lines` | or | 
 				  | ! | not |
-				-
+			- Ex boolean *and*:
+				- ```c
+				  ```

@@ -189,4 +189,8 @@ tags:: Beej Guides, C, Tutorial
 					  printf("%zu\n", sizeof(char));  // prints 1
 					  ```
 						- Its the size in bytes of type of expression - that's why a and 2+7 are the same -> they're both type int
-						- Note that i
+						- Note that `sizeof` is a compile-time operation
+	- ## 3.3 Flow Control
+		- Let's start with executing a single statement with `if`:
+			- ```c
+			  ```

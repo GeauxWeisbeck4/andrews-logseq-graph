@@ -303,4 +303,24 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 				- If you want the loop to execute at least once, no matter the loop condition, use `do-while`
 		- ### 3.3.4 The `for` statement
-			-
+			- Great loop if you want to know the # of times you want to loop in advance
+			- Two similar pieces of code:
+				- ```c
+				  // Print numbers between 0 and 9, inclusive...
+				  
+				  // Using a while statement:
+				  
+				  i = 0;
+				  while (i < 10) {
+				      printf("i is %d\n", i);
+				      i++;
+				  }
+				  
+				  // Do the exact same thing with a for-loop:
+				  
+				  for (i = 0; i < 10; i++) {
+				      printf("i is %d\n", i);
+				  }
+				  ```
+			- Here is the structure of the for loop:
+				- `for (initialize things)`

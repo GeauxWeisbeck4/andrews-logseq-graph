@@ -166,4 +166,9 @@ tags:: Beej Guides, C, Tutorial
 				  ```
 				- `!` has higher order of precedence than other boolean ops so we have to use parentheses in that case -> but its the same as:
 					- ```c
+					  if (x >= 12)
+					    printf("x is not less than 12\n");
 					  ```
+		- ### 3.2.7 The `sizeof` Operator
+			- Tells you the size (in bytes) that a variable or data type uses in memory
+				- More particularly, the size (in bytes) that the type of a particular expression (might even be a single variable)

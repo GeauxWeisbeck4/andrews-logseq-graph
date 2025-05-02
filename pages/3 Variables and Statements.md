@@ -219,4 +219,33 @@ tags:: Beej Guides, C, Tutorial
 			  ```
 			- What if we want to do something if the condition is false with an `else` clause on our `if`?
 				- ```c
+				  int i = 99;
+				  
+				  if (i == 10)
+				    printf("i is 10!\n");
+				  else {
+				    printf("i is decidedly not 10.\n");
+				    printf("Which irritates me a little, frankly\n");
+				  }
+				  ```
+			- We can even cascade to test a variety of conditions
+				- ```c
+				  int i = 99;
+				  
+				  if (i == 10)
+				      printf("i is 10!\n");
+				  
+				  else if (i == 20)
+				      printf("i is 20!\n");
+				  
+				  else if (i == 99) {
+				      printf("i is 99! My favorite\n");
+				      printf("I can't tell you how happy I am.\n");
+				      printf("Really.\n");
+				  }
+				      
+				  else
+				      printf("i is some crazy number I've never heard of.\n");
+				  
+				  
 				  ```

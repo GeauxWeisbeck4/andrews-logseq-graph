@@ -7,4 +7,9 @@ tags:: Beej Guides, C, Tutorial
 		- ### 3.1.1 Variable Names
 			- Can't start with digit, two underscores, or underscore w/ capital
 		- ### 3.1.2 Variable Types
-			- | Type | Example |
+			- | Type | Example | C Type|
+			  |-----|
+			  | Integer | 3490 | int |
+			  | Floating point | 3.14159 | float |
+			  | Character (single) | 'c' | char |
+			  | String | "Hello, world!

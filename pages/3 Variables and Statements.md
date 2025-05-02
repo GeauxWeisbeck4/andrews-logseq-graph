@@ -18,4 +18,5 @@ tags:: Beej Guides, C, Tutorial
 			- For our example code, we are going to use the `printf()` function to print out our variables -> it does this by searching for a variety of special sequences starting with (%) percentage sign:
 				- %d -> Looks to the next parameter that was passed and prints integer
 				- %f -> Prints a float
+				- %s -> Prints a string
 				-

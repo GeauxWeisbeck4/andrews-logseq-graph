@@ -193,4 +193,11 @@ tags:: Beej Guides, C, Tutorial
 	- ## 3.3 Flow Control
 		- Let's start with executing a single statement with `if`:
 			- ```c
+			  if (x == 10) printf("x is 10\n");
+			  // Or
+			  if (x == 10)
+			    printf("x is 10\n");
+			  ```
+		- Now let's try multiple things to happen - block or compound statement
+			- ```c
 			  ```

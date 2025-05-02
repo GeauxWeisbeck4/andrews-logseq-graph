@@ -24,7 +24,8 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- They cannot be used as constructors or generators
 			- They don't bind the `this` value
 			- They don't have an `arguments` object or a `prototype` object
-		- This will be used a lot in this book (first argument):
+		- #### Example `arrow1.js`
+			- This will be used a lot in this book (first argument):
 		- ```javascript
 		  // arrow1.js
 		  const _getHeight = (tree) => (isEmpty(tree) ? 0: tree.height);
@@ -37,5 +38,6 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 				    return isEmpty(tree) ? 0 : tree.height;
 				  };
 				  ```
-		- If you use short version and want to return an object, enclose it in parentheses like in `arrow2.js`
+		- #### Example `arrow2.js`
+			- If you use short version and want to return an object, enclose it in parentheses like in
 		-

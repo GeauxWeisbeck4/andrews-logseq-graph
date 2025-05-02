@@ -14,3 +14,4 @@ tags:: Beej Guides, C, Tutorial
 			  | Character (single) | 'c' | char |
 			  | String | "Hello, world!" | char * |
 				- C makes an effort to convert auto. between most numeric types when you ask it to
+				- ut

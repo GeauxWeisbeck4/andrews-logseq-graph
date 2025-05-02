@@ -35,4 +35,11 @@ tags:: Beej Guides, C, Tutorial
 			- In C, 0 = "false" & non-zero = "true"
 			- You can declare boolean types as ints but...
 				- Technically you should be setting a `bool` value to `true` or `false`, or the result of some expression that evaluates to either
-			- Be careful if you mix and match since the numeric value of `true` is 1 probably, and if you are relying on some other positive value to be true, you will be in for a
+			- Be careful if you mix and match since the numeric value of `true` is 1 probably, and if you are relying on some other positive value to be true, you will be in for a surprise
+				- ```c
+				  print("%d\n", true == 12);  // Prints "0", false!
+				  ```
+	- ## 3.2 Operators and Expressions
+		- similar to other languages
+		- ### 3.2.1 Arithmetic
+		-

@@ -73,4 +73,9 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 					  logseq.order-list-type:: number
 					- You don't need to do it inside a constructor. Constructors are available if you need more complex object instance initialization.
 					  logseq.order-list-type:: number
-					- logseq.order-list-type:: number
+					- Getters
+					  logseq.order-list-type:: number
+					- Setters
+					  logseq.order-list-type:: number
+						- Getters and setters are other powerful features -> they bind an object's property to functions that are invoked whenever we try to modify or access that property.
+	- ## Spread

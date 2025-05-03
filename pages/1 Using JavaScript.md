@@ -107,4 +107,8 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			- ```javascript
 			  let [first, last, role = "President", party] = ["Abraham", "Lincoln"];
 			  ```
-		-
+		- You can also swap or rotate variables, which is used a lot later on
+			- ```javascript
+			  [heap[p], heap[i]] = [heap[i], [heap[p]]];
+			  ```
+		- Another pattern i

@@ -9,3 +9,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Produces shorter and cleaner code
 		- ### Maintainable
 			- Makes it easier to understand and maintain
+		- ### Testable
+			- Unit testing allows you to verify the behavior of each component of your code and provides a sort of documentation, providing examples of how to use any given function
+		- ### Modular
+			- Focuses on separation of concerns by writing

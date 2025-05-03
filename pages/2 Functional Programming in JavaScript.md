@@ -27,4 +27,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 					- Parameter to `.then()` method is a function, and it's passed in the same way you pass a number or an array.
 			- `firstClassObject.js` Example
 				- `preOrder()` fx takes two arguments, a tree and a visit unction. If the visit function isn't provided, the default value is just a simple function that just logs whatever you pass it.
-				-
+			- Taking one or more functions makes it a *higher-order function* -> it should also return a fx as a result
+			- Common functions that don't do either of those are

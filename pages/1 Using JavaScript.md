@@ -135,5 +135,7 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 		- Split code into pieces you can import when needed so that functionality is packaged in a way that is easier to understand and maintain. Should be an aggregation of related functions and classes, providing a set of features.
 		- High cohesion -> elements put together should truly belong together as unrelated functionalities should not be mixed in the same module.
 		- Low coupling -> Distinct modules should be interdependent as little as possible
-		- ### CommonJS Modules
+		- ### CommonJS Modules vs ECMAScript Modules
+	- ## Closures and Immediately Invoked Function Expressions
+		- Closure is the combo of fx plus its encompassing scope to which the function has access. It allows you to have private variables which in turn allows you to create equivalent of classes and modules
 		-

@@ -93,3 +93,6 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 				  const newArray = [...myArray];
 				  ```
 		- We can also use the spread operator for fx that need to deal with an undefined number of parameters.
+			- See `spreadMathMax.js`
+	- ## The Destructuring Statement
+		-

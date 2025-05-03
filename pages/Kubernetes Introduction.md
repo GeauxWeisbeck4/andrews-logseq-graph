@@ -81,4 +81,7 @@ tags:: Kubernetes, Roadmaps
 	- [articleUnderstand Kubernetes terminology](https://about.gitlab.com/blog/2020/07/30/kubernetes-terminology/)
 	- [videoWhat Is Kubernetes?](https://www.youtube.com/watch?v=QJ4fODH6DXI)
 	- [videoKubernetes Explained by Experts in 2 Minutes](https://youtu.be/XfBrtNZ2OCw)
-	-
+	- [articleCompare Apache Mesos vs. Kubernetes](https://www.techtarget.com/searchitoperations/tip/Compare-container-orchestrators-Apache-Mesos-vs-Kubernetes)
+	- [articleDocker Swarm, a User-Friendly Alternative to Kubernetes](https://thenewstack.io/docker-swarm-a-user-friendly-alternative-to-kubernetes/)
+	- [articleCan You Live without Kubernetes?](https://thenewstack.io/can-you-live-without-kubernetes/)
+	- [feedExplore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

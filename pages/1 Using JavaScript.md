@@ -67,5 +67,10 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 				    }
 				  }
 				  ```
-					- Start by defining a simple class, or extend an existing one ->
+					- Start by defining a simple class, or extend an existing one -> you could have another `class BinaryTree extends Tree` to define a class based on `Tree`.
 					  logseq.order-list-type:: number
+					- You can define attributes outside a constructor
+					  logseq.order-list-type:: number
+					- You don't need to do it inside a constructor. Constructors are available if you need more complex object instance initialization.
+					  logseq.order-list-type:: number
+					- logseq.order-list-type:: number

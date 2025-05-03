@@ -132,4 +132,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			  let [smaller, bigger] = order2(22, 9); // smaller==9, bigger==22
 			  ```
 	- ## Modules
-	-
+	- Split code into pieces you can import when needed so that functionality is packaged in a way that is easier to understand and maintain. Should be an aggregation of related functions and classes, providing a set of features.
+	- High cohesion ->

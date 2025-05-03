@@ -18,3 +18,10 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 - # JavaScript as a Functional Language
 	- ## Functions as First Class Objects
 		- You can do anything with a fx that you can with other objects. Store em in variables, pass fx as arguments, or return a fx as a result of some other fx
+			- For example, in Axios:
+				- ```javascript
+				  axios.get("your/url/api").then((response) => {
+				    // ... do something with the response
+				  })
+				  ```
+					- Parameter to `.then()`

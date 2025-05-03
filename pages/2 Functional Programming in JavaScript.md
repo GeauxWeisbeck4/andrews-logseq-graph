@@ -24,4 +24,4 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				    // ... do something with the response
 				  })
 				  ```
-					- Parameter to `.then()`
+					- Parameter to `.then()` method is a function, and it's passed in the same way you pass a number or an array.

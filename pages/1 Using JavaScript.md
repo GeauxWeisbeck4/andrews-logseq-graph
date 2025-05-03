@@ -46,4 +46,26 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 		- Won't spend a lot of time here - reference Objects and Classes in MDN Web Doc Notes -> [[MDN Web Docs]]
 			- This example is modified but will be examined in chapter 13
 				- ```javascript
+				  class Tree {		// 1
+				    _children = [];	// 2
+				  
+				    constructor(rootKey) {	//3
+				      this._key = rootKey;
+				    }
+				  
+				    isEmpty() {
+				      return this._key === undefined;
+				    }
+				  
+				    get key() {		// 4
+				      this._throwIfEmpty();
+				      return this._key;
+				    }
+				  
+				    set key(v) {		// 5
+				      this._key = v;
+				    }
+				  }
 				  ```
+					- Start by defining a simple class, or extend an existing one ->
+					  logseq.order-list-type:: number

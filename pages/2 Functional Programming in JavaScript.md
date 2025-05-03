@@ -15,6 +15,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Focuses on separation of concerns by writing code's features independent of each other and are highly cohesive and loosly copuled
 		- ### Reusable
 			- Reusing code saves time and money
-	- ## JavaScript as a Functional Language
-		- It actually is great for fp yo
-		- ### Functions as First Class Objects
+- # JavaScript as a Functional Language
+	- ## Functions as First Class Objects
+		- You can do anything with a fx that you can with other objects. Store em in variables, pass fx as arguments, or return a fx as a result of some other fx

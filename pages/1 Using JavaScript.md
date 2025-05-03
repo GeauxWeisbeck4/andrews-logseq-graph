@@ -80,3 +80,9 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 						- Getters and setters are other powerful features -> they bind an object's property to functions that are invoked whenever we try to modify or access that property.
 	- ## The Spread Operator
 		- (...) You can spread an array, string, or object into separate values in a single operation
+			- ```javascript
+			  const myArray = [3, 1, 4, 1, 5, 9, 2, 6];
+			  const arrayMax = Math.max(...myArray);	// 1
+			  const newArray = [...myArray];	// 2
+			  ```
+				-

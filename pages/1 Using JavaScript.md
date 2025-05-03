@@ -78,4 +78,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 					- Setters
 					  logseq.order-list-type:: number
 						- Getters and setters are other powerful features -> they bind an object's property to functions that are invoked whenever we try to modify or access that property.
-	- ## Spread
+	- ## The Spread Operator
+		- (...) You can spread an array, string, or object into separate values in a single operation

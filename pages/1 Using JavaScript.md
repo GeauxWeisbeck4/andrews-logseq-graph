@@ -112,3 +112,24 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			  [heap[p], heap[i]] = [heap[i], [heap[p]]];
 			  ```
 		- Another pattern for destructuring is to return two or more variables at once from a function
+			- ```javascript
+			  const order2 = (a, b) => {
+			  
+			    if (a < b) {
+			  
+			      return [a, b];
+			  
+			    } else {
+			  
+			      return [b, a];
+			  
+			    }
+			  
+			  };
+			  
+			  
+			  
+			  let [smaller, bigger] = order2(22, 9); // smaller==9, bigger==22
+			  ```
+	- ## Modules
+	-

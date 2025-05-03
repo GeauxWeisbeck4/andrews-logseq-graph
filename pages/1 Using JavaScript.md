@@ -138,4 +138,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 		- ### CommonJS Modules vs ECMAScript Modules
 	- ## Closures and Immediately Invoked Function Expressions
 		- Closure is the combo of fx plus its encompassing scope to which the function has access. It allows you to have private variables which in turn allows you to create equivalent of classes and modules
-		-
+			- Look at `closure.js`
+				- The variables first and last are not

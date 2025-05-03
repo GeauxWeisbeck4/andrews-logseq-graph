@@ -105,4 +105,6 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			  ```
 		- You can also use default values if there are no corresponding values on the right hand side
 			- ```javascript
+			  let [first, last, role = "President", party] = ["Abraham", "Lincoln"];
 			  ```
+		-

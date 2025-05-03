@@ -24,6 +24,14 @@ tags:: Kubernetes, Roadmaps
 	  Kubernetes combines over 15 years of Google's experience running 
 	  production workloads at scale with best-of-breed ideas and practices 
 	  from the community.
+- ## Why Kubernetes
+	- Kubernetes (k8s) is needed because it provides a powerful and 
+	  flexible platform for deploying and managing containerized applications 
+	  at scale. It allows for easy scalability, high resilience, application 
+	  portability, automation of many tasks, and standardization of the 
+	  container platform. k8s also helps reduce complexity and workload for 
+	  operations teams, enabling them to focus on more strategic initiatives.
+	-
 -
 -
 - # Resources
@@ -35,5 +43,9 @@ tags:: Kubernetes, Roadmaps
 	- [articleWhat is Kubernetes?](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
 	- [articleKubernetes Overview & Essential Reading](https://thenewstack.io/kubernetes/)
 	- [videoTutorial - Kubernetes](https://www.youtube.com/watch?v=VnvRFRk_51k&t=1sn)
+	- [feedExplore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)
+	- [officialWhy you need Kubernetes and what it can do](https://kubernetes.io/docs/concepts/overview/#why-you-need-kubernetes-and-what-can-it-do)
+	- [articleWhy should you use Kubernetes?](https://www.predicagroup.com/blog/why-kubernetes-2022/)
+	- [articlePrimer: How Kubernetes Came to Be, What It Is, and Why You Should Care](https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/)
 	- [feedExplore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)
 	-

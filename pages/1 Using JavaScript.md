@@ -101,4 +101,8 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 			  ```
 		- We can also mix destructuring and spreading
 			- ```javascript
+			  [first, last, ...years] = ["Abraham", "Lincoln", 1809, 1865];
+			  ```
+		- You can also use default values if there are no corresponding values on the right hand side
+			- ```javascript
 			  ```

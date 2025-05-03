@@ -142,3 +142,32 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 				- The variables first and last are not accessible by `me.last` or `me.first` since they work as private values. Only an object's return value will have access to them because they are in the scope of the function
 		- You can simulate modules with Immediately Invoked Function Expressions, which is a fx that is defined and executed as soon as its defined
 	- ## [JSDoc Documentation](https://jsdoc.app)
+		- ```javascript
+		  /**
+		  
+		   * Add a new key to a heap.
+		  
+		   *
+		  
+		   * @author F.Kereki
+		  
+		   * @version 1.0
+		  
+		   * @param {pointer} heap – Heap to which the key is added
+		  
+		   * @param {string} keyToAdd – Key to be added
+		  
+		   * @return Updated heap
+		  
+		   */
+		  
+		  const add = (heap, keyToAdd) => {
+		  
+		    heap.push(keyToAdd);
+		  
+		    _bubbleUp(heap, heap.length – 1);
+		  
+		    return heap;
+		  
+		  };
+		  ```

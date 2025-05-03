@@ -15,4 +15,6 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	  (ADTs) as they relate to data structures, and the concept of algorithm 
 	  performance, which plays a crucial role when designing for efficiency.
 	- ## [[1 Using JavaScript]]
+	- ## [[2 Functional Programming in JavaScript]]
 	-
+-

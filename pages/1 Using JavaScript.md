@@ -139,4 +139,5 @@ tags:: JavaScript, Data Structures, Algorithms, No Starch Press, Programming Boo
 	- ## Closures and Immediately Invoked Function Expressions
 		- Closure is the combo of fx plus its encompassing scope to which the function has access. It allows you to have private variables which in turn allows you to create equivalent of classes and modules
 			- Look at `closure.js`
-				- The variables first and last are not
+				- The variables first and last are not accessible by `me.last` or `me.first` since they work as private values. Only an object's return value will have access to them because they are in the scope of the function
+		- You can simulate modules with Immediately Invoked Function Expressions

@@ -33,4 +33,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- The function is stored in a variable `myVisit` as an object and then the contents are passed into another function.
 	- ## Declarative-Style Programming
 		- We don't list out steps like we would in procedural programming. There are methods we use to to accomplish our task directly without having to create the solution by hand, like with looping - we can use `for` or `while` loop, but a loop method is more declarative.
-			- A good example for JavaScript is arrays. We can use the array methods  to
+			- A good example for JavaScript is arrays. We can use the array methods  to alter arrays without having to create the whole solution by hand. Here are a few:
+				- `filter()` -> Pick elements that satisfy some condition out of an array
+				- `find()` and `.findIndex()` -> Search an array to find an element that satisfies some condition
+				-

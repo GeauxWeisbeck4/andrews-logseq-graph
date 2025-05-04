@@ -42,4 +42,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- `.map()` -> Lets you transform one array into another by applying a given function to its elements
 				- `.reduce()` -> Applies a given operation to the whole array from left to right into a single result
 				- `.reduceRight()` -> Works like `.reduce()` but from right to left
+	- ## Filtering an Array
+		- Go through an array, select some elements that satisfy some condition and dropping the rest. Provide a predicate (fx that produces a boolean result in terms of arguments) and new array will be produced with elements of original for which predicate returned true
 			-

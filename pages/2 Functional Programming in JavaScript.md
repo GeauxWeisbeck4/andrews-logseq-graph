@@ -30,3 +30,4 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Taking one or more functions makes it a *higher-order function* -> it should also return a fx as a result
 			- Common functions that don't do either of those are *first-order functions*
 			- Back to `firstClassObject.js`
+				- The function is stored in a variable `myVisit`

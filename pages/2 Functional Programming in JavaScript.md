@@ -67,4 +67,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Write loops that go through a complete array perform some kind of operation and end up with a single computed value (like add a list of numbers up) -> `reduce()` and `reduceRight()`
 	- ## Looping Through Arrays
 		- `forEach()` array function takes care of looping through an array and invoking a callback for each element so declare what kind of work to do and nothing else -> we'll redo the array summing logic
-		-
+	- ## Higher-Order Functions
+		- All fx that work with callbacks are hofs and so are lal the array methods
+		- Some allow you to work in a more declarative style and some allow you to extend a fx

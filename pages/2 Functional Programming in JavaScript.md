@@ -63,4 +63,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- `some()` and `every()` check whether any element of an array satisies some predicate and the second checks whether all elements satisy it
 	- ## Transforming an Array
 		- Algorithm that goes through an array and applies some operation to create a new set. A list of strings that represent numbers but we need that list to become a list of the corresponding numeric values, we can set up a loop to go through all elements of the array systematically, processing each one by one and producing a new array -> `map()`
+	- ## Reducing Array to a Single Value
 		-

@@ -39,4 +39,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				  | Create | -> bag | Create a new bag. |
 				  | Empty? | bag -> boolean | Given a bag, determine whether its empty. | 
 				  | Add | bag x value -> bag | Given a value, add it to the bag. |
+				  | Remove | bag x value -> bag | Given a value, remove it from the bag. |
+				  | Find | bag x value -> boolean | Given a vlue, check whether it exists in the bag. |
+				  | Greatest | bag -> value
 -

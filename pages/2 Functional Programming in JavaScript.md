@@ -74,4 +74,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Look at `hofLogging.js` -> we could create the functionality ourselves and implement it in the function, but if we have many return statements it becomes cumbersome
 			- Using a wrapper hof logging function, we can create it and then add it to our function we want to log
 	- ## Side Effects
-		- Pure function -> a fx depends only on parameters it receives and doesn't produce any side effects. Closely related to mathematical functions -> given an f(x) function, all it does when
+		- Pure function -> a fx depends only on parameters it receives and doesn't produce any side effects. Closely related to mathematical functions -> given an f(x) function, all it does when given a value for x is calculate a new value.
+			- Advantageous b/c they don't produce any side effects like changing program state, modify variables, mutate objects, and so on.

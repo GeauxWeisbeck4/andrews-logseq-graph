@@ -82,4 +82,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 				  }
 				  ```
 		- ### Solving the Squarest Game on the Beach Puzzle
-			-
+	- ## Dynamic Programming
+		- Solve other small problems and store those results so they don't have to be called again when they are needed later
+		-

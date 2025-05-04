@@ -28,5 +28,9 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- Fx that take objects of a given type and produce some values of a different type. For date ADT, `getMonth()` operation might produce the month as an integer, or an `isSunday()` predicate could determine whether the given date falls on a Sunday
 			- ### Producers
 				- Fx that take an object of a given type and possibly some extra arguments and produce a new object of the given type. Date ADT could have a fx that added an integer number of days to a date producing a new date
-				-
+			- ### Mutators
+				- Fx that directly modify an object of a given type. A `setMonth()` method could modify an object instead of producing a new one
+	- ## Implementing an ADT
+		- Creating a bag or multiset
+			- Container like a set, but it allows for repeated elements (sets cannot have repe)
 -

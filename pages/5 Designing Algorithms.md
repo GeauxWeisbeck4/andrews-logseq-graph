@@ -86,5 +86,8 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- Solve other small problems and store those results so they don't have to be called again when they are needed later
 		- Can be:
 		- top down ->  Solves problem logically by checking whether its already been solved before dealing with this subproblem
-		- bottom up -> requires first looking at smaller subproblems then solving the original problem
-		- ### Memoization
+		- bottom up ->  requires first looking at smaller subproblems then solving the original problem
+		- Memoization -> Recursive implementations, best for top down
+		- tabulation -> bassed on arrays or matrices, best for bottom up DP
+		- ### Calculating Fibonacci Series w/ Top Down DP
+		-

@@ -93,4 +93,4 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- If a function needs to set global state, it shouldn't do so directly. It should produce an updated state and return it and the caller should be responsible for updating the global state.
 	- ## Using Injection
 		- If the problem of working with state is solved, but we need some impure function like I/O for random numbers. This method provides more flexible code, simplifies unit testing, and allows easier maintenance.
-			- Suppose a function needed to call API and did it directly by using Axios in injection
+			- Suppose a function needed to call API and did it directly by using Axios in `injection.js`

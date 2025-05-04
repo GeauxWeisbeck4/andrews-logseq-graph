@@ -8,5 +8,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- This book looks at data structures in the context of an ADT
 	- ## Data Types
 		- Data types are those defined by sets of possible values it may represent and the operations that can be performed on it -> example: possible to concatenate two strings, perform logical operations with booleans, do arithmetic with integer numbers, or compare floating point numbers
-		-
+		- Basic idea of an ADT is specifying the operations that can be done, not internal aspects
+	- ## Abstraction
+		- Abstraction implies hiding or omitting details and reaching i
 -

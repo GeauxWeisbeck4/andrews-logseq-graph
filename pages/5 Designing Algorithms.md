@@ -95,4 +95,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Line Breaking with Top-Down DP
 			- Building a nice-looking web form with different versions with different fields
 			- If we want a justified right margin, we need to break rows and stretch some fields to make everything even.
-				- > TeX typeset
+				- > TeX typeset system implements the Knuth-Pass algorithm to determine line breaks for paragraphs so they look nice
+				-

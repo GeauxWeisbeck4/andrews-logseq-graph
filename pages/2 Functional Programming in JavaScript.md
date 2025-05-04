@@ -37,4 +37,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- `filter()` -> Pick elements that satisfy some condition out of an array
 				- `find()` and `.findIndex()` -> Search an array to find an element that satisfies some condition
 				- `.some()` -> Let you know whether at least one element of an array satisfies a condition
-				- `.every()` ->
+				- `.every()` -> Lets you test whether all elements of an array satisfy a condition
+			- Other functions transform an array into a new array or a single result
+				- `.map()`

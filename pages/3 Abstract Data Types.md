@@ -32,5 +32,8 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- Fx that directly modify an object of a given type. A `setMonth()` method could modify an object instead of producing a new one
 	- ## Implementing an ADT
 		- Creating a bag or multiset
-			- Container like a set, but it allows for repeated elements (sets cannot have repe)
+			- Container like a set, but it allows for repeated elements (sets cannot have repeated elements by def.)
+			- Also add an extra operation ("greatest") to make it more interesting
+				- | *Operation* | *Sign|ature* | *Description* |
+				  |--------------|
 -

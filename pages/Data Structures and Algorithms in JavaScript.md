@@ -24,5 +24,5 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	  and analysis of algorithms and focus on how to design algorithms, 
 	  considering several strategies for discovering solutions to specific 
 	  problems.
-		- ## [[5 Designing Algorithms]]
-		-
+	- ## [[5 Designing Algorithms]]
+-

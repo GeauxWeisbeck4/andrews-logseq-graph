@@ -82,3 +82,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Don't want internal variables to keep state between calls b/c they could potentially be changed and return different outputs even if they have the same input arguments -> why fp doesn't like OOP
 	- ## Mutating Arguments
 		- Don't modify actual arguments to the function
+		- In JS, arguments are passed by value unless tey are objects or arrays and are passed by reference
+			- Latter implies if function modifies arguments, it will modify the original object or array and have side effects

@@ -57,3 +57,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- `find()` -> Goes through array from beginning to end, testing for the given predicate, if an element of the array satisfies it, the element is returned; if no elements satisfy the predicate, undefined is returned.
 				- `findLast()` does same, but searches from beginning to end
 			- `findIndex()` -> Similar to find except it returns position of the first element satisfying the predicate or -1 if no elements satisfy it
+				- `findLastIndex()` -> same like findLast() above
+			-

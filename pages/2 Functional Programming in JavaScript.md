@@ -89,4 +89,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Impure Functions
 		- Doing away with impurities isn't really feasible, so next option is to consider how to reduce the problem size
 	- ## Avoiding State
-		- If a function needs to getglobal state, provide function wh
+		- If a function needs to getglobal state, provide function whatever state elements it needs as arguments.
+		- If a function needs to set global state, it shouldn't do so directly. It should produce an updated state and return it and the caller should be responsible for updating the global state.
+	- ## Using Injection
+		- If the problem of w

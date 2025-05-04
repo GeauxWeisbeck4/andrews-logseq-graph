@@ -32,4 +32,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Back to `firstClassObject.js`
 				- The function is stored in a variable `myVisit` as an object and then the contents are passed into another function.
 	- ## Declarative-Style Programming
-		- We don't list out steps like we would in procedural programming. There are methods we use to to accomplish our task directly without having to create the solution by hand, like with looping - we can use `for` or `while`
+		- We don't list out steps like we would in procedural programming. There are methods we use to to accomplish our task directly without having to create the solution by hand, like with looping - we can use `for` or `while` loop, but a loop method is more declarative.
+			- A good example for JavaScript is arrays. We can use the array methods  to

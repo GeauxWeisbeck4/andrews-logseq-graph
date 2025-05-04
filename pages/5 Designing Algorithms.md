@@ -93,4 +93,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- To do this more effectively we need to use memoize to cache previous calcualtions and not repeat the same ones over and over. It first checks an internal cache to see if it was laready made
 			- There are packages we can use like npm package [fast-memoize](https://www.npmjs.com/package/fast-memoize)
 		- ### Line Breaking with Top-Down DP
-			- Building a nice-looking web form w
+			- Building a nice-looking web form with different versions with different fields
+			- If we want a justified right margin, we need to break rows and stretch some fields to make everything even.
+				- > TeX typeset

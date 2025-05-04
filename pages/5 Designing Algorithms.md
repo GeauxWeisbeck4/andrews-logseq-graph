@@ -50,4 +50,34 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Tower of Hanoi
 	- ## The Backtracking Technique
 		- Choose one method of many, and try finding a solution with it. If it succeeds you're done, if you fail backtrack to the point where you made the selection and choose a different option.  If you run out of options, there is no solution
-		-
+		- ### Finding a Path in a Maze
+			- Pseudocode for an algorithm
+				- ```
+				  ❶ solveMaze(fromCell, toCell, maze, path=[])
+				  
+				  ❷ if(fromCell === toCell) {
+				  
+				      return path // success!
+				  
+				    }
+				  
+				  ❸ mark fromCell as visited
+				  
+				  ❹ for all nextCell cells adjacent to fromCell {
+				  
+				    ❺ updatedPath = solveMaze(nextCell, toCell, maze, path + fromCell)
+				  
+				      if updatedPath is not null {
+				  
+				        return path
+				  
+				      }
+				  
+				    }
+				  
+				    // All adjacent cells were tried, and failed...
+				  
+				  ❻ return null   // failure
+				  
+				  }
+				  ```

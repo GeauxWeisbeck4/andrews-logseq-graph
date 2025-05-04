@@ -71,3 +71,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- All fx that work with callbacks are hofs and so are lal the array methods
 		- Some allow you to work in a more declarative style and some allow you to extend a fx -> example: adding logging as an aid to debugging or memoizing for better performance
 		- Returnning a new function -> example: wrapped behavior. Wrapping produces a new fx that keeps its original funcitonality but adds some extra behavior. If we want to add logging, we could modify it, even though it is risky
+		- Look at `hofLogging.js` -> we could create the functionality ourselves and implement it in the function, but if we have many return statements it becomes cumbersome
+			-

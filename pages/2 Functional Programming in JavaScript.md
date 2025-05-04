@@ -92,4 +92,4 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- If a function needs to getglobal state, provide function whatever state elements it needs as arguments.
 		- If a function needs to set global state, it shouldn't do so directly. It should produce an updated state and return it and the caller should be responsible for updating the global state.
 	- ## Using Injection
-		- If the problem of w
+		- If the problem of working with state is solved, but we need some impure function like I/O for random numbers

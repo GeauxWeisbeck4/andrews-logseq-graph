@@ -79,4 +79,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Using Global State
 		- Most common reason for side effects is using nonlocal variables that are shared with other parts of code. Global variables make it hard to debug your functions
 	- ## Keeping Inner State
-		-
+		- Don't want internal variables to keep state between calls b/c they could potentially be changed and return different outputs even if they have the same input arguments -> why fp doesn't like OOP
+	- ## Mutating Arguments
+		- Don't modify actual arguments to the function

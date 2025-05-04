@@ -77,4 +77,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Pure function -> a fx depends only on parameters it receives and doesn't produce any side effects. Closely related to mathematical functions -> given an f(x) function, all it does when given a value for x is calculate a new value.
 			- Advantageous b/c they don't produce any side effects like changing program state, modify variables, mutate objects, and so on. Depends only on input and no external things.
 	- ## Using Global State
-		- Most common reason for side effects is using nonlocal variables that are shared with other parts of code.
+		- Most common reason for side effects is using nonlocal variables that are shared with other parts of code. Global variables make it hard to debug your functions
+	- ## Keeping Inner State
+		-

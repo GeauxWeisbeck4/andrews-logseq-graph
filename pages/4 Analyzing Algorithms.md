@@ -1,0 +1,102 @@
+tags:: JavaScript, Data Structures, Algorithms, No Starch Press
+
+- title:: Analyzing Algorithms
+- chapter:: 4
+- book:: [[Data Structures and Algorithms in JavaScript]]
+- # 4 ANALYZING ALGORITHMS
+	- In the previous chapter, we discussed abstract data types, and later in this book we’ll consider many more with alternative implementations and algorithms. When facing several possible ways of implementing the same abstract data types, consider the efficiency of each concrete implementation, which requires an analysis of the involved algorithms. We’ll study the basics of such analysis in this chapter to help us make better decisions. What data structure should you pick? What algorithm should you implement? Knowing objectively how to analyze their performance will produce the right answers.
+	  Performance
+- When measuring the efficiency of a given algorithm, the key is to consider the resources (such as time or random access memory [RAM]) the algorithm needs, and then you can compare different algorithms based on the needed amount. (This method doesn’t really apply to small problems. For instance, if you have a dictionary with just a dozen keys, no matter how it’s structured or what algorithm you apply for searching, the results will be fast.)
+- We always want to minimize resource usage (faster processing time, less needed RAM), but we cannot really directly compare time complexity (speed) to space complexity (memory). Often, faster-performing algorithms require larger amounts of memory, and vice versa; smaller, simpler structures may imply slower algorithms. (You’ll see an example later in this chapter.) All of these considerations are moot, however, if an algorithm takes way too much time or requires more RAM than available.
+- In all the cases in this book, we’ll see that the space complexity of algorithms is fairly stable. It grows in direct proportion to the number of input elements, so there really may be no grounds to select one algorithm over another. On the other hand, we’ll see that time complexity results in many variations, providing a solid basis for choosing which data structure to use and which algorithms to implement.
+- Accordingly, whenever the book refers to the complexity of any given algorithm, it’s always referring to time complexity, or how long the algorithm takes to perform its function in relation to the size of its input data.
+  Complexity
+- All data structures always have some basic parameter upon which the efficiency of all algorithms depends. For instance, if you are searching in a dictionary, the number of keys in the dictionary will probably impact the searching speed; more keys equal more time. If sorting a set of values, having more values means a slower sort; for example, ordering the 5 cards in a poker hand can be done really quickly, but ordering a whole deck of 52 cards takes longer. In all cases, we’ll call that input parameter n, and you’ll express the algorithm’s time complexity as a function of that input; this is analysis of algorithms. An algorithm will be more efficient when that function’s values are small, or at least, it will grow slowly in comparison to the growth of the input size.
+  In some cases, an algorithm’s performance may be directly linked to the data itself; for example, sorting an almost-in-order sequence is likely faster than sorting a completely disordered, random sequence of values. This means we’ll be considering best- or worst-case performance, as well as average performance. If nothing is specified, we’ll aim for an upper bound on the algorithm’s complexity, so in this book, we’ll be looking at worst-case complexity unless otherwise noted.
+- In general, we won’t try (or won’t be able) to get a precise expression for the complexity function. We’ll look at how it compares with common mathematical functions, such as n or n2 or n log n, and consider in which class an algorithm is in to compare it with others on an equal basis. Algorithms in the same class don’t perform at the same speed, but roughly speaking, all algorithms in the same class will perform in the same way for larger inputs, growing at the same rate and keeping the same relationship among them. In other words, an algorithm that’s 10 times speedier will most likely keep being thus; it won’t become 100 times faster or half as much slower than others in its class.
+  Notations for Complexity
+- To express a given function’s behavior when its argument grows, we use a family of notations called asymptotic notations. This family includes five different notations, including the most often used: big O notation. The O stands for “order”—or, more accurately, the German word Ordnung. (You’ll see the other four notations soon.)
+- Big O notation groups functions according to how they behave for growing values of their n parameter. Depending on what algorithm or data structure we’re studying, n could be the number of values to sort, the size of a set to be searched, or how many keys are added to a tree. This is made clear on a case-by-case basis when discussing performance.
+- Describing a function in terms of its big O behavior implies an upper bound on how the function grows. Without diving in to mathematical functions too deeply, if the behavior of a function f(n) is O(g(n)), that means that when n grows, both functions grow in the same proportion. (A complete definition also specifies that this relationship need not occur for all values of n, but only for large enough ones. For small values of n, the relationship may not apply.) In other words, saying that the behavior of a given algorithm is O(some function) already implies how the needed time will grow for larger values of n.
+- Let’s get back to the five notations (Table 4-1).
+- Table 4-1: The Five Asymptotic Notations
+- Notation
+- Name
+- Description
+- f(n) = o(g(n))
+- Small o
+- g(n) grows much faster than f(n); the growth rate of g(n) is strictly greater than that of f(n).
+- f(n) = O(g(n))
+- Big O
+- g(n) is an upper bound for f(n); the growth rate of g(n) is greater than or equal to that of f(n).
+- f(n) = Θ(g(n))
+- Big Theta
+- g(n) is a bound from above and below for f(n); both g(n) and f(n) grow at the same rate.
+- f(n) = Ω(g(n))
+- Big Omega
+- g(n) is a lower bound for f(n); the growth rate of g(n) is less than or equal to that of f(n).
+- f(n) = ω(g(n))
+- Small omega
+- g(n) grows much slower than f(n); the growth rate of g(n) is strictly less than that of f(n).
+- We’ll mainly be using the big O notation; the others are included for completeness. Big theta is more accurate than big O, which is really a bound, but you are aiming for a good, close one that doesn’t behave too differently from the original function. Getting a precise, exact expression for the behavior of any algorithm is quite complex (and there still are many algorithms for which the precise order isn’t yet known), so working with orders is appropriate. For example, if your personal debt is a few dollars or a few millions, actual numbers aren’t really needed to know that in the former case you’re doing very well and in the latter you’re in serious trouble.
+- NOTE
+- Donald Knuth, renowned computer scientist, author of The Art of Computer Programming books, and expert on analysis of algorithms, once suggested that the big O should be a big omicron, another Greek character that looks exactly like an uppercase O, but it didn’t pan out. See https://danluu.com/knuth-big-o.pdf for the full story.
+- Another (rough) interpretation is that the big O bound represents a worst case, while the big omega bound represents the best case, or the smallest amount of time some algorithm could take. In that sense, the big theta case implies an algorithm with a stable performance, because both the worst and best cases grow at the same rate. With this interpretation, the small o notation means an even worse upper limit, and the small omega would be a worse lower limit in the sense that actual behavior is greatly separated from these two bounds, with quite different growth rates.
+  Complexity Classes
+- Most often we find that algorithms involve only a few common orders. Table 4-2 shows the orders you’ll see in this chapter.
+- Table 4-2: Common Orders
+- Order
+- Name
+- Example
+- O(1)
+- Constant
+- Accessing the first element of a list and popping the top of a stack (Chapter 10)
+- O(log n)
+- Logarithmic
+- Searching an ordered array with binary search (Chapter 9) and average height of a binary tree (Chapter 12)
+- O(n)
+- Linear
+- Searching an unordered array (Chapter 9) and inorder traversal of a tree (Chapter 12)
+- O(n log n)
+- Log-linear
+- Sorting an array with heapsort and average behavior of quicksort (Chapter 6)
+- O(n2)
+- Quadratic
+- Sorting an array with bubble sort and worst case for quicksort (Chapter 6)
+- O(kn)
+- Exponential
+- Testing whether a binary formula is a tautology (k = 2) and a naive implementation of the Fibonacci series (k = 1.618)
+- O(n!)
+- Factorial
+- Finding the optimum traveling salesman solution and sorting by random permutations (in Chapter 6)
+- The last two orders are algorithms that are so slow, you won’t use them in real life; their time complexity grows way too fast to be usable.
+- Figure 4-1 is a simple chart showing how the seven functions from Table 4-2 behave. Clearly an O(log n) algorithm would be preferred instead of an O(n2) algorithm.
+- Figure 4-1: This chart (drawn using Desmos, https://www.desmos.com/calculator) shows the seven functions from Table 4-2.
+- The two first orders at the bottom of the chart (constant and logarithmic) are excellently well behaved. When considering linear (the diagonal line from bottom left to upper right) and log-linear orders (the closest curve to the diagonal), growth starts to be important. The next order, quadratic, goes off the chart for x = 10 with the value x2 = 100. Finally, the exponential and factorial orders are even worse behaved; their growth makes them impossible to use.
+- You can look at this behavior another way by answering a simple question: What happens with a given algorithm if the input size is 10 times bigger? If the algorithm is O(1), the amount of time will stay the same, with no growth. With an O(log n) algorithm, the required time would grow, but by a fixed amount. An O(n) algorithm would (nearly) multiply its time by 10, and an O(n2) algorithm would be around 100 times longer. An O(n log n) algorithm would be in between those two. The difference is clear, but note for future reference that it’s much closer to O(n).
+- The results from the previous paragraph are also the reason why O(n) is used rather than O(9n) or O(22n). The ratio between these three algorithms is constant, so if n grows, they will grow at the same rate. On the other hand, an O(n2) algorithm will grow so much faster, it’s really is a class by itself. Constant values are meaningless when comparing classes: O(n2) will always grow faster (and also become larger) than an O(n) algorithm, even throwing in some constant factor, if n is large enough.
+  Performance Measurements
+- When measuring an algorithm’s performance, the best-case performance is an algorithm’s behavior in ideal conditions; for instance, in the previous section we mentioned doing a search and finding the desired element at the first position of an array. You can’t ever assume you’ll always get this optimum performance, but it’s a baseline to compare other performances.
+- The complementary case is worst-case performance, which means you try to measure how an algorithm will perform in the slowest possible way. For instance, later in the book we’ll see algorithms that usually have O(n log n) performance that may degenerate to O(n2) performance for specific input data ordering. The worst-case analysis is important, because you should always assume that possibility will happen; it’s the safest (but most pessimistic) analysis.
+- A third possibility is average-case performance, which means determining how an algorithm will behave with typical or random input. In Chapter 6 you’ll see that quicksort’s average performance is O(n log n) despite cases when performance is much worse.
+- The fourth possibility is amortized time. Some algorithms often take a short time to perform, but periodically require more time. If you look at one individual operation, the result may be poor, but if you consider the average performance over a long series of operations, you may find that, overall, the amortized time is much better than the worst case, letting you predict the result of sequences of operations.
+- Let’s consider a simple example: adding elements to a fixed-size array. If every time you want to add a new element you need to copy the current array to a new (and longer) array, the cost of each addition would be O(n). However, if the array is full, an alternative strategy is to copy it to a new double-sized array, leaving empty space to wait for future insertions.
+- Let’s look at how this strategy works. Consider a situation with an array that is almost fully occupied (cells in gray), with just one empty space (cell in white) at the end, as shown in Figure 4-2.
+- Figure 4-2: An array with only one empty space
+- When adding a new element (an O(1) operation with constant time), the array is full but you don’t need to worry yet (Figure 4-3).
+- Figure 4-3: Now the array is full.
+- However, if you need to add another element, there’s no place for it, so you copy the array to a new double-sized one and then add the new value, as shown in Figure 4-4.
+- Figure 4-4: A new double-sized array provides space for the new value and more.
+- After this process, which is an O(n) operation, you now have n free cells and may rest easily, knowing that upcoming insertions won’t need any copying and will be O(1). The next time the array becomes full, the process will be repeated: a lengthy single duplication followed by many fast additions. Averaging the cost of many insertions, the costlier (infrequent) doubling will be compensated for by the inexpensive (frequent) simple additions, and the amortized performance will be O(1).
+- NOTE
+- The following section is much more mathematically minded than the rest of the book. If you wish, you can skip the demonstrations and study only the results. The rest of the book won’t delve into so much math. This section is simply to give you a taste of what complete, formal proofs look like.
+  Analysis of Algorithms in Practice
+- Let’s consider examples of actual orders. Suppose you want to search an ordered array of length n for a given key. The worst case, linear search, is going sequentially through the whole array (because you haven’t yet learned the better algorithms described later in the book) without finding the key. In this case, the linear search performance is O(n) because you have to go through the whole array: n steps and n (failed) tests. The best-case performance is finding the key you wanted on the first attempt: Ω(1).
+- The average requires a bit of algebra. You need to consider all cases: you could find the given element at the first place, the second place, and so on, all the way up the nth, which means n possibilities in all. On average, you have to test (1 + 2 + ... + n)/n elements. The sum of numbers from 1 to n equals n(n + 1)/2, so the average needed (dividing by n) ends up (n + 1)/2. This expression is clearly proportional to n, so the average behavior of the algorithm is indeed O(n). If you had to consider using this algorithm, you’d think in terms of O(n), assuming the worst; hoping for the best case isn’t realistic.
+- NOTE
+- There’s another way to look at this calculation. The search could succeed at the first element or could take up to the nth; on average, (n + 1)/2. Or, it could succeed either at the second element or the (n – 1)th; on average again, (n + 1)/2. The same reasoning applies for the third, fourth, and subsequent elements. For each case in which the search finishes in a few steps, a complementary case drives the average number of steps up to (n + 1)/2. Since in every case the average is the same, you can conclude that’s the result. You arrive at the same result with a bit more “hand waving” but less algebra.
+- Let’s discuss another way of searching an ordered array, a binary search, which you’ll see in Chapter 9. Instead of starting at the beginning of an array and going through all its elements, you start at the middle of the array. If you find the key you want, you’re done. If not, you can discard half the array (if the key you want is less than the middle element, you know it can’t be in the higher part of the array) and recursively search in the other part. You search in that new part by picking its middle element, comparing, and so on.
+- Consider an array with the numbers 4, 9, 12, 22, 34, 56, and 60. If you wanted to check whether 12 was in it, first you’d look at the middle element: 22. That’s not what you want, so you can discard the second half of the array (34, 56, and 60), because you know that 12, if present, must be in the first half. Now look for 12 in the array that is now 4, 9, and 12. Start by looking at its middle element (9) and then discard it and the first half of the array (4). The last step of the search looks at an array with a single element (12). Its middle (and only) element is what you were looking for, so the search succeeded. If you were looking for 13 instead, the search would fail at this point, since no more pieces of the array exist.
+- To see how this algorithm performs, count how many times you need to test an element; assume that the array’s length n is 2k–1 for some k > 0, so all halves of the array always have an odd number. (This is just to simplify calculations; see question 4.9.) In one case the element is found on the first attempt. In two cases the key is found on the second try—namely, the middle elements of the chosen halves. In four cases, the third try is successful, and in eight cases, the fourth try succeeds. Figure 4-5 shows this for an array with 15 elements.
+- Figure 4-5: Starting in the middle of an array with 15 elements
+- For a general array, the total number of comparisons is S = (1 × 1 + 2 × 2 + 3 × 4 + 4 × 8 + ...+ k × 2k − 1), which you must divide by the number of elements in the array to get the average. To calculate S do a math trick and first write a more general formula. Write S = 1 × 20 + 2 × 21 + 3 × 22 + ... + k × 2k−1 and then define f(x) = 1x0 + 2x1 + 3x2 + ... + kxk−1; note that S = f(2). It follows from calculus that f(x) is the derivative of g(x) = 1 + x + x2+ x3 + ... + xk. Since a well-known result says that g(x) = (xk+1 – 1)/(x – 1), by deriving you find the following:

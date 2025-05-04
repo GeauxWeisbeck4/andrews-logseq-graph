@@ -45,4 +45,12 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Filtering an Array
 		- Go through an array, select some elements that satisfy some condition and dropping the rest. Provide a predicate (fx that produces a boolean result in terms of arguments) and new array will be produced with elements of original for which predicate returned true
 			- ```javascript
+			  const under21 = (value) => value < 21;
+			  
+			  let myArray = [22, 9, 60, 12, 4, 56];
+			  let newArray = myArray.filter(under21);
+			  console.log(newArray);
 			  ```
+				- This is truly declarative - specify what we want to get, not how to get it
+	- ## Searching an Array
+		-

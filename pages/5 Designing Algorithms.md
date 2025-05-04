@@ -84,4 +84,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Solving the Squarest Game on the Beach Puzzle
 	- ## Dynamic Programming
 		- Solve other small problems and store those results so they don't have to be called again when they are needed later
-		-
+		- Can be:
+		- top down ->  Solves problem logically by checking whether its already been solved before dealing with this subproblem
+		- bottom up -> requires first looking at smaller subproblems then solving the original problem
+		- ### Memoization

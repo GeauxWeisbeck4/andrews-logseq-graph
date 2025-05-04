@@ -64,4 +64,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Transforming an Array
 		- Algorithm that goes through an array and applies some operation to create a new set. A list of strings that represent numbers but we need that list to become a list of the corresponding numeric values, we can set up a loop to go through all elements of the array systematically, processing each one by one and producing a new array -> `map()`
 	- ## Reducing Array to a Single Value
+		- Write loops that go through a complete array perform some kind of operation and end up with a single computed value (like add a list of numbers up) -> `reduce()` and `reduceRight()`
 		-

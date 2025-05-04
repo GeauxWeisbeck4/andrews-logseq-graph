@@ -12,5 +12,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Abstraction
 		- Abstraction implies hiding or omitting details and reaching instead for an overarching higher-level idea -> Ignore implementation aspects so we can concentrate on our needs
 		- ### Encapsulation
-			-
+			- Designing modules as if they had a "shell" or a "capsule" around them so only the module is responsible for handling its data. Makes design more coherent and cohesive
+		- ### Data Hiding
+			- Hide inner details of a module's implementation from rest of systems so they can ensured to be changed without affecting any other parts of the code.
 -

@@ -18,5 +18,9 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	- ## [[2 Functional Programming in JavaScript]]
 	- ## [[3 Abstract Data Types]]
 	- ## [[4 Analyzing Algorithms]]
-	-
-	-
+- # Part Two: Algorithms
+	- In this second part of the book, we’ll shift our discussion away from 
+	  the theoretical topics of functional programming, abstract data types, 
+	  and analysis of algorithms and focus on how to design algorithms, 
+	  considering several strategies for discovering solutions to specific 
+	  problems.

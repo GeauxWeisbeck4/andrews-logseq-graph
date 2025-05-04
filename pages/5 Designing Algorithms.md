@@ -39,4 +39,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 	- ## The Divide an Conquer Strategy
 		- Divide problem into smaller versions of itself and conquer it using the solutions to all of them
 		- ### Calculating Factorials
-			-
+			- Factorial of a non-negative number n is defined as: n = 0, 0! = 1, and for n > 0, n! = n x (n - 1)!
+			- How many ways can you order n books in a row on a shelf?

@@ -44,3 +44,12 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			  | Greatest | bag -> value \ undefined | Given a bag, find the greatest value in it |
 		- Specifying an operation's signature is specifying a function's parameters and the returned results -> based on a type system called Hindley-Milner
 	- ## Implementing ADTs Using Classes
+		- We'll use a class to implement a bag ADT. For example, if we add HOME, SWEET, HOME words to a bag, it looks like:
+			- ```
+			  {
+			  	count: 3,
+			      data: {
+			      HO
+			      }
+			  }
+			  ```

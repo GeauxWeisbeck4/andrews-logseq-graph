@@ -17,4 +17,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Hide inner details of a module's implementation from rest of systems so they can ensured to be changed without affecting any other parts of the code. No one can access inner details from the outside
 		- ### Modularity
 			- Dividing a system into spearate modules that can be designed and developed independently from the rest of the system.
+	- ## Operations and Mutations
+		- Mutable vs immutable values are a common way to classify data types
+		- In JS, objects and arrays are mutable, you can edit them w/out creating new ones
 -

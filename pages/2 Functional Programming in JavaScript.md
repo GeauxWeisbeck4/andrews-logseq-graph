@@ -53,4 +53,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			  ```
 				- This is truly declarative - specify what we want to get, not how to get it
 	- ## Searching an Array
-		-
+		- Search an array for some element that satisfies a predicate
+			- `find()` -> Goes through array from beginning to end, testing for the given predicate, if an element of the array satisfies it, the element is returned; if no elements satisfy the predicate, endef

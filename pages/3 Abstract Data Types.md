@@ -54,3 +54,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			      },
 			  };
 			  ```
+	- ## Implementing ADTs Using Functions (Mutable Version)
+		- What if we were to use functions instead of classes
+		-

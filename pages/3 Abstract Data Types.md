@@ -34,12 +34,12 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Creating a bag or multiset
 			- Container like a set, but it allows for repeated elements (sets cannot have repeated elements by def.)
 			- Also add an extra operation ("greatest") to make it more interesting
-				- | *Operation* | *Sign|ature* | *Description* |
-				  |--------------|
-				  | Create | -> bag | Create a new bag. |
-				  | Empty? | bag -> boolean | Given a bag, determine whether its empty. | 
-				  | Add | bag x value -> bag | Given a value, add it to the bag. |
-				  | Remove | bag x value -> bag | Given a value, remove it from the bag. |
-				  | Find | bag x value -> boolean | Given a vlue, check whether it exists in the bag. |
-				  | Greatest | bag -> value
+			- | *Operation* | *Sign|ature* | *Description* |
+			  |--------------|
+			  | Create | -> bag | Create a new bag. |
+			  | Empty? | bag -> boolean | Given a bag, determine whether its empty. | 
+			  | Add | bag x value -> bag | Given a value, add it to the bag. |
+			  | Remove | bag x value -> bag | Given a value, remove it from the bag. |
+			  | Find | bag x value -> boolean | Given a vlue, check whether it exists in the bag. |
+			  | Greatest | bag -> value \ undefined | Given a bag, find the greatest value in it |
 -

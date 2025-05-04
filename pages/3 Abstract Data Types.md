@@ -49,7 +49,8 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			  {
 			  	count: 3,
 			      data: {
-			      HO
-			      }
-			  }
+			      	HOME: 2,
+			          SWEET: 1,
+			      },
+			  };
 			  ```

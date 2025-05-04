@@ -36,4 +36,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Also add an extra operation ("greatest") to make it more interesting
 				- | *Operation* | *Sign|ature* | *Description* |
 				  |--------------|
+				  | Create | -> bag | Create a new bag. |
+				  | Empty? | bag -> boolean | Given a bag, determine whether its empty. | 
+				  | Add | bag x value -> bag | Given a value, add it to the bag. |
 -

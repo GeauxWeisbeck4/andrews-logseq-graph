@@ -90,4 +90,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- Memoization -> Recursive implementations, best for top down
 		- tabulation -> bassed on arrays or matrices, best for bottom up DP
 		- ### Calculating Fibonacci Series w/ Top Down DP
+			- To do this more effectively we need to use memoize to cache previous calcualtions and not repeat the same ones over and over. It first checks an internal cache to see if it was laready made
 			-

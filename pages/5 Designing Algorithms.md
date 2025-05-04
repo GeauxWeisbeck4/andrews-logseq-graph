@@ -46,4 +46,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Considering the Fibonacci Series
 			- Series starts w/ 0 and 1, after that it is the series of two previous ones
 				- F0 = 0, F1 = 1, and for n > 1, Fn = Fn-1 + Fn-2
-				-
+		- ### Sorting and Puzzles
+			- Tower of Hanoi

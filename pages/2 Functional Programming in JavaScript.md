@@ -39,4 +39,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- `.some()` -> Let you know whether at least one element of an array satisfies a condition
 				- `.every()` -> Lets you test whether all elements of an array satisfy a condition
 			- Other functions transform an array into a new array or a single result
-				- `.map()`
+				- `.map()` -> Lets you transform one array into another by applying a given function to its elements
+				- `.reduce()` -> Applies a given operation to the whole array from left to right into a s

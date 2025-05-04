@@ -21,4 +21,10 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 	  the surface in many of the algorithms that we’ll explore later.
 	- ## Recursion
 		- A function calls itself over and over again. Appears naturally in:
-			-
+			- ### Mathematics
+				- Factorial of a number or Fibonacci series are naturally recursive
+			- ### Data Structures
+				- List may be empty of consist of a special node, head of the list, followed by another list
+				- Tree, consisting of parent node called a root that is connected ot children
+			- ### Procedures
+				-

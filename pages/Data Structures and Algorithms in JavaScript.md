@@ -16,5 +16,5 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	  performance, which plays a crucial role when designing for efficiency.
 	- ## [[1 Using JavaScript]]
 	- ## [[2 Functional Programming in JavaScript]]
+	- ## [[3 Abstract Data Types]]
 	-
--

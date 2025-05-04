@@ -84,3 +84,7 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- Don't modify actual arguments to the function
 		- In JS, arguments are passed by value unless tey are objects or arrays and are passed by reference
 			- Latter implies if function modifies arguments, it will modify the original object or array and have side effects
+	- ## Returning Impure Functions
+		- Some fx are inherently impure -> API that returns daily news or `Math.random()` in video game to return randomness
+	- ## Impure Functions
+		-

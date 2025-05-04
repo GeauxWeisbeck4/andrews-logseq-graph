@@ -6,4 +6,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 - # 3 Abstract Data Types
 	- Abstract data types (ADT) are defined by the operations it supports and the behavior it provides. It specifies needs and requirements in general
 	- This book looks at data structures in the context of an ADT
+	- ## Data Types
+		- Data types are
 -

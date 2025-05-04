@@ -91,4 +91,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- tabulation -> bassed on arrays or matrices, best for bottom up DP
 		- ### Calculating Fibonacci Series w/ Top Down DP
 			- To do this more effectively we need to use memoize to cache previous calcualtions and not repeat the same ones over and over. It first checks an internal cache to see if it was laready made
-			-
+			- There are packages we can use like npm package [fast-memoize](https://www.npmjs.com/package/fast-memoize)

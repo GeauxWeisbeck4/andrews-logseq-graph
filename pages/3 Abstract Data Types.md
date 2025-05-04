@@ -60,4 +60,25 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- If we want to use immutability fo rmore functional way and avoiding side effects
 			- We may not modify the bag directly, but may need to change the implementation of the mutator methods. Must create and return a new object if bag needs changes
 			- ```javascript
+			  const add = (bag, value) => {
+			    bag = {count: bag.count - 1, data: {...bag.data}};
+			    if (find(bag, value)) {
+			      bag.data[value]++;
+			    } else {
+			      bag.data[value] = 1;
+			    }
+			    return bag;
+			  }
+			  
+			  const remove = (bag, value) => {
+			    if (find(bag, value)) {
+			      bag = {count: bag.count - 1, data: {...bag.data}};
+			      if (bag.data[value] > 1) {
+			        bag.data[value]--;
+			      } else {
+			        delete bag.data[value];
+			      }
+			    }
+			    return bag;
+			  }
 			  ```

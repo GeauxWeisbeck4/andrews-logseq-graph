@@ -48,3 +48,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 				- F0 = 0, F1 = 1, and for n > 1, Fn = Fn-1 + Fn-2
 		- ### Sorting and Puzzles
 			- Tower of Hanoi
+	- ## The Backtracking Technique
+		- Choose one method of many, and try finding a solution with it. If it succeeds you're done, if you fail backtrack to the point where you made the selection and choose a different option.  If you run out of options, there is no solution
+		-

@@ -69,4 +69,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 		- `forEach()` array function takes care of looping through an array and invoking a callback for each element so declare what kind of work to do and nothing else -> we'll redo the array summing logic
 	- ## Higher-Order Functions
 		- All fx that work with callbacks are hofs and so are lal the array methods
-		- Some allow you to work in a more declarative style and some allow you to extend a fx
+		- Some allow you to work in a more declarative style and some allow you to extend a fx -> example: adding logging as an aid to debugging or memoizing for better performance
+		- Returnning a new function -> example: wrapped behavior. Wrapping produces a new fx that keeps its original funcitonality but adds some extra behavior. If we want to add logging, we could modify it, even though it is risky

@@ -61,4 +61,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- > If you need something more specific `includes()`, `index()` and `lastIndex()` are good, but they aren't functional because you can't test them.
 	- ## Testing an Array
 		- `some()` and `every()` check whether any element of an array satisies some predicate and the second checks whether all elements satisy it
-		-
+	- ## Transforming an Array
+		- Algorithm that goes through an array and applies some operation to create a new set.

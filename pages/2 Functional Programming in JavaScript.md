@@ -58,4 +58,4 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- `findLast()` does same, but searches from beginning to end
 			- `findIndex()` -> Similar to find except it returns position of the first element satisfying the predicate or -1 if no elements satisfy it
 				- `findLastIndex()` -> same like findLast() above
-			-
+			- > If you need something more specific `inclu`

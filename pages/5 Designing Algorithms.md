@@ -44,4 +44,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Searching and Traversing
 			- binary search and traversing (if there is no tasks you're done, if not go to top of list and do all tasks till your done)
 		- ### Considering the Fibonacci Series
-			-
+			- Series starts w/ 0 and 1, after that it is the series of two previous ones
+				- F0 = 0, F1 = 1, and for n > 1, Fn = Fn-1 + Fn-2
+				-

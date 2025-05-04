@@ -75,4 +75,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Using a wrapper hof logging function, we can create it and then add it to our function we want to log
 	- ## Side Effects
 		- Pure function -> a fx depends only on parameters it receives and doesn't produce any side effects. Closely related to mathematical functions -> given an f(x) function, all it does when given a value for x is calculate a new value.
-			- Advantageous b/c they don't produce any side effects like changing program state, modify variables, mutate objects, and so on.
+			- Advantageous b/c they don't produce any side effects like changing program state, modify variables, mutate objects, and so on. Depends only on input and no external things.
+	- ## Using Global State
+		- Most common reason for side effects is using nonlocal variables that are shared with other parts of code.

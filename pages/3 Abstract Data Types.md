@@ -59,4 +59,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Implementing ADTs Using Functions (Immutable Version)
 		- If we want to use immutability fo rmore functional way and avoiding side effects
 			- We may not modify the bag directly, but may need to change the implementation of the mutator methods. Must create and return a new object if bag needs changes
-		-
+			- ```javascript
+			  ```

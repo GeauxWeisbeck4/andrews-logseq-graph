@@ -81,3 +81,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 				  
 				  }
 				  ```
+		- ### Solving the Squarest Game on the Beach Puzzle
+			-

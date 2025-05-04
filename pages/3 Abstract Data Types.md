@@ -42,4 +42,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			  | Remove | bag x value -> bag | Given a value, remove it from the bag. |
 			  | Find | bag x value -> boolean | Given a vlue, check whether it exists in the bag. |
 			  | Greatest | bag -> value \ undefined | Given a bag, find the greatest value in it |
-		- Specifying an operation's signature is specifying
+		- Specifying an operation's signature is specifying a function's parameters and the returned results -> based on a type system called Hindley-Milner
+	- ## Implementing ADTs Using Classes

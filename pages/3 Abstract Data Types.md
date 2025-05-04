@@ -25,5 +25,8 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- ### Creators
 				- Fx that produce a new object of a given type, possibly taking some values as arguments. Using the date ADT example, a creator could build a new date out of day, month, and year values
 			- ### Observers
-				- Fx that take objects of a given type and produce some values of a different type. For date ADT, `getMonth()` `
+				- Fx that take objects of a given type and produce some values of a different type. For date ADT, `getMonth()` operation might produce the month as an integer, or an `isSunday()` predicate could determine whether the given date falls on a Sunday
+			- ### Producers
+				- Fx that take an object of a given type and possibly some extra arguments and produce a new object of the given type. Date ADT could have a fx that added an integer number of days to a date producing a new date
+				-
 -

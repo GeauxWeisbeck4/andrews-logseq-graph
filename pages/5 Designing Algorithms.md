@@ -33,4 +33,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 				- Complex ones that need to use the function itself as an aid
 			- Four step procedure
 				- Assume you already have a function that solves your problem
-				-
+				- Find some simple base cases that you can solve directly without any complications
+				- Figure out how you can solve the original problem by first solving one or more smaller versions of it
+				- Apply your assumed function from step 1 to solve minor prolems of step 3, or if small enough solve as in step 2
+	- ## Divide an Conquer

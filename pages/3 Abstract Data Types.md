@@ -19,5 +19,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 			- Dividing a system into spearate modules that can be designed and developed independently from the rest of the system.
 	- ## Operations and Mutations
 		- Mutable vs immutable values are a common way to classify data types
-		- In JS, objects and arrays are mutable, you can edit them w/out creating new ones
+		- In JS, objects and arrays are mutable, you can edit them w/out creating new ones. Numbers and strings are immutable -> a new, different and distinct value is created when you apply an operation to them
+		- > React Redux is
 -

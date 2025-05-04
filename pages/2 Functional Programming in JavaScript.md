@@ -44,4 +44,5 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 				- `.reduceRight()` -> Works like `.reduce()` but from right to left
 	- ## Filtering an Array
 		- Go through an array, select some elements that satisfy some condition and dropping the rest. Provide a predicate (fx that produces a boolean result in terms of arguments) and new array will be produced with elements of original for which predicate returned true
-			-
+			- ```javascript
+			  ```

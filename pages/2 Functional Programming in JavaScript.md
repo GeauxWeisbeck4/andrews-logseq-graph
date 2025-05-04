@@ -87,4 +87,6 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Returning Impure Functions
 		- Some fx are inherently impure -> API that returns daily news or `Math.random()` in video game to return randomness
 	- ## Impure Functions
-		-
+		- Doing away with impurities isn't really feasible, so next option is to consider how to reduce the problem size
+	- ## Avoiding State
+		- If a function needs to getglobal state, provide function wh

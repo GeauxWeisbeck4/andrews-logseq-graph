@@ -20,5 +20,8 @@ tags:: JavaScript, Data Structures, Algorithms, Computer Science, No Starch Pres
 	- ## Operations and Mutations
 		- Mutable vs immutable values are a common way to classify data types
 		- In JS, objects and arrays are mutable, you can edit them w/out creating new ones. Numbers and strings are immutable -> a new, different and distinct value is created when you apply an operation to them
-		- > React Redux is
+		- > React Redux is an example of immutability -> if you want to modify state of a React application, you must generate a new state with whatever changes you want. Assume you manage state data in immutable way
+		-
+		- ### Creators
+			- Fx that produce a new object of a given type, possibly taking some values as arguments
 -

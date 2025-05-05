@@ -114,4 +114,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Figure 5-13: The optimum solution
 			- The cost is shown underneath each block. If a block is split into several blocks, its cost is the sum of the costs of its parts. The highlighted path shows how to achieve the optimum solution: leave 7 on its own in the first row, place 2 and 5 in the second row, and place 3 and 6 in the last row, for a total cost of 19. Running the algorithm produces the following result:
 		- ### Calculating Fibo with Bottom Up
-			-
+			- With bottom up, we start at 0 and then 1, and then go up, calculating fibonacci this way instead of Top Down and

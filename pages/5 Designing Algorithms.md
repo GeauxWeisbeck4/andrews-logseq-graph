@@ -121,4 +121,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- We're using a closure for the partial array initialized in an immediately invoked function expression IIFE.
 			- Trying two different ways to approach this problem has eventually gotten us to an O(1) runtime.
 	- ## Brute Force Search
-		- Tries to systemically find a solution by trying all possible solutions one by one until you find it. Very inefficient as it becomes factorial,
+		- Tries to systemically find a solution by trying all possible solutions one by one until you find it. Very inefficient as it becomes factorial and exponential
+		-

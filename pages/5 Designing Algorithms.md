@@ -130,10 +130,8 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Even for readers well versed in logic and expressions, it 
 			  may not be immediately obvious which of these expressions are always 
 			  true.
-			- Recognizing whether a function of *n* boolean parameters is a tautology potentially requires 2*n*
-			  tests for each possible combination of true/false values, verifying for
-			  each one whether the function produces true as its result. 
-			  Alternatively, you could try to find some combination of arguments that 
+			- Recognizing whether a function of *n* boolean parameters is a tautology potentially requires 2*n* tests for each possible combination of true/false values, verifying for each one whether the function produces true as its result.
+			- Alternatively, you could try to find some combination of arguments that 
 			  would make it false, and upon finding such a case, you’d know that the 
 			  function isn’t a tautology. That kind of search would require a logic 
 			  similar to what you used to solve the Squarest Game on the Beach puzzle.

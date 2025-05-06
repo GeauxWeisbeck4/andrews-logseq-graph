@@ -141,3 +141,11 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			  were set to true. To see whether the original function is a tautology, 
 			  you need to test a couple of functions with one fewer argument, which 
 			  leads to a simple implementation:
+			- The isTautology() function receives the original function to test, fn, and a list of arguments ❶.
+			   The latter will be the combination of values with which you’ll test 
+			  whether the function is true. If you have the right number of arguments ❷, you evaluate the function ❸, and if it produces a false value ❹,
+			   you’ll log the fact and return false, which will short-circuit all 
+			  future and pending evaluations. If the function returns true, the search
+			   will continue. If not enough arguments were provided ❺,
+			   you’ll test the function twice: adding a true and adding a false to the
+			   list of arguments, so all combinations will be tested eventually.

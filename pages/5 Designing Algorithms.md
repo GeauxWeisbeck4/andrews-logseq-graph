@@ -116,3 +116,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Calculating Fibo with Bottom Up
 			- With bottom up, we start at 0 and then 1, and then go up, calculating fibonacci this way instead of Top Down -> calculations don't have to be recalculated and stored the same way so we can just loop straight through and calculate much easier
 		- ### Summing Ranges Recursively with Bottom Up DP
+		- ### Sum

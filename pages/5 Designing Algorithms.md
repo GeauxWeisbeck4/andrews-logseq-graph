@@ -120,3 +120,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- You could use an internal cache to precompute all the values (partial) and all queries would be O(1)
 			- We're using a closure for the partial array initialized in an immediately invoked function expression IIFE.
 			- Trying two different ways to approach this problem has eventually gotten us to an O(1) runtime.
+	- ## Brute Force S
+		-

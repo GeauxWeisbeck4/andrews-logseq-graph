@@ -122,4 +122,24 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Trying two different ways to approach this problem has eventually gotten us to an O(1) runtime.
 	- ## Brute Force Search
 		- Tries to systemically find a solution by trying all possible solutions one by one until you find it. Very inefficient as it becomes factorial and exponential
-		-
+		- ### Detecting Tautologies
+			- In terms of logic, a tautology is a boolean expression that is always true. For instance, if X, Y, and Z are boolean variables, two of the following JavaScript expressions are tautologies:
+				- X OR Y OR (NOT X AND NOT Y)
+				- X OR (NOT X AND Y) === X OR Y
+				- (NOT X) OR (X AND Z) OR (NOT Y) OR (Y AND Z) OR Z
+			- Even for readers well versed in logic and expressions, it 
+			  may not be immediately obvious which of these expressions are always 
+			  true.
+			- Recognizing whether a function of *n* boolean parameters is a tautology potentially requires 2*n*
+			  tests for each possible combination of true/false values, verifying for
+			  each one whether the function produces true as its result. 
+			  Alternatively, you could try to find some combination of arguments that 
+			  would make it false, and upon finding such a case, you’d know that the 
+			  function isn’t a tautology. That kind of search would require a logic 
+			  similar to what you used to solve the Squarest Game on the Beach puzzle.
+			- Using recursion comes in handy: if a function of *n* 
+			  variables is a tautology, setting the first variable to false should 
+			  also be a tautology, and the same would happen if the first variable 
+			  were set to true. To see whether the original function is a tautology, 
+			  you need to test a couple of functions with one fewer argument, which 
+			  leads to a simple implementation:

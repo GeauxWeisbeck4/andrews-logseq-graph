@@ -118,4 +118,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- ### Summing Ranges Recursively with Bottom Up DP
 		- ### Summing Ranges by Precomputing Bottom Up Dp
 			- You could use an internal cache to precompute all the values (partial) and all queries would be O(1)
-			- We're using a closure
+			- We're using a closure for the partial array initialized in an immediately invoked function expression IIFE.

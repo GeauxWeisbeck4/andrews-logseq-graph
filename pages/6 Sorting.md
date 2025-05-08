@@ -143,3 +143,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  code shows that partitioning will always end with just one subarray, and
 		  you’ll have the equivalent of a selection sort or bubble sort, which 
 		  means performance goes down to *O*(*n*2). But you can fix that.
+		- ### Pivot Selection Techniques
+			- Choosing the pivot can have a serious impact on the quicksort performance. Always choosing the largest or smallest element in the array will have a negative hit in speed.
+			- Randomly choose
+			  logseq.order-list-type:: number

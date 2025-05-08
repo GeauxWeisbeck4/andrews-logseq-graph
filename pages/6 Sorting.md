@@ -50,4 +50,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  uncommon case) by checking whether any swaps occurred on each pass through the array. If none were detected, it means the array is in order.
 			- The performance of this algorithm is *O*(*n*2), which is easy to calculate. First count comparisons: the first pass does (*n* – 1) comparisons, the second pass does (*n* – 2), the third (*n* – 3), and so on. The total number of comparisons is then the sum of all numbers from (*n* – 1) down to 1, which is *n*(*n* – 1) / 2, so *O*(*n*2).
 	- ## Sinking Sort and Shuttle Sort
-		-
+		- Sinking sort is similar to bubble sort, but instead of greatest values moving to the end of the array, the lowest values quickly sink to the beginning of the array, but it takes longer for the greatest values to go to their places
+			- We can alternate a pass of bubbling and a pass of sinking to get an enhanced algorithm called a shuttle sort ()

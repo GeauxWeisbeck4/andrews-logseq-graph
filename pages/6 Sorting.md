@@ -3,4 +3,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 - title:: Sorting
 - Chapter:: 6
 - book:: [[Data Structures and Algorithms in JavaScript]]
--
+- # 6 Sorting
+	-

@@ -25,3 +25,10 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  a.sort((a, b) => a - b);
 				  console.log(a);
 				  ```
+			- Check out `complexSortMethod.js`
+				- The data to sort ❶ has dates as three separate fields (d, m, and y, for day, month, and year) and name (n). If two persons are from different years ❷,
+				  you return the correct negative or positive value by subtracting years.
+				  If the years are equal, you can compare months with the same kind of 
+				  logic ❸, and if the months are also equal ❹, you do the same once more for days. If the dates are equal, you resort to comparing names ❺, and since you cannot use math and just subtract dates, you need to make actual comparisons, date part by date part. The final return 0 is done ❻ only if all fields were compared and found to match.
+				- If you sort the people array with the dateNameCompare(...) function you just wrote, you get the expected result:
+				-

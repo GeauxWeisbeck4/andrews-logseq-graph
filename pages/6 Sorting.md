@@ -108,3 +108,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Shell Sort
 		- ![image.png](../assets/image_1746697417969_0.png)
 		- In the first pass, we do an insertion sort, but for elements set four places apart, which leads to an array consisting of four short-ordered sequences. Then lower the gap size to 2 and repeat the sort. The array now consists of two ordered sequences. Eventually you'll reach gap size of 1 and you'll just do an insertion sort because of the previous partial sorts with fewer comparisons or swaps as the normal algorithm which is the advantage of shell sort.
+		-

@@ -167,6 +167,8 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Hybrid Version
 		- Quicksort is fast, but all the pivots and recursion have an impact on 
 		  running times, so for small arrays, a combination of simpler algorithms 
-		  may actually perform faster. You can apply a *hybrid algorithm* that uses two distinct methods together. For instance, you may find that for arrays under a certain
-		   cutoff limit, an insertion sort performs better, so whenever you want 
+		  may actually perform faster. You can apply a *hybrid algorithm* that uses two distinct methods together. For instance, you may find that for arrays under a certain cutoff limit, an insertion sort performs better, so whenever you want 
 		  to sort an array smaller than the limit, switch to that algorithm:
+		- The lines in bold are all you need to change. Define the cutoff limit, 
+		  and when sorting, if the array is small enough, apply the alternative 
+		  sort.

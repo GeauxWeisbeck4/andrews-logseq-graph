@@ -45,4 +45,9 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- Easy to implement and only for smaller sets of data
 		- ## Bubble Sort
 			- ![image.png](../assets/image_1746693433530_0.png)
-			-
+			- All sorting functions share the same signature: an array to sort (arr) and the limits for sorting (from, to) that, by default, will be the array’s extremes ❶. The outer loop ❷ goes from the right to the left; after each pass, the element in position j of the array will be in the right place. The inner loop ❸ goes from the left extreme to the right up to (but not reaching) the outer loop j; you compare each element with the next ❹, and if the second is smaller, you swap them.
+			- You can improve performance in most sorted arrays (a not 
+			  uncommon case) by checking whether any swaps occurred on each pass through the array. If none were detected, it means the array is in order.
+			- The performance of this algorithm is *O*(*n*2), which is easy to calculate. First count comparisons: the first pass does (*n* – 1) comparisons, the second pass does (*n* – 2), the third (*n* – 3), and so on. The total number of comparisons is then the sum of all numbers from (*n* – 1) down to 1, which is *n*(*n* – 1) / 2, so *O*(*n*2).
+	- ## Sinking Sort and Shuttle Sort
+		-

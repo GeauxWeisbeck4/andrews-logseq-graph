@@ -145,5 +145,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  means performance goes down to *O*(*n*2). But you can fix that.
 		- ### Pivot Selection Techniques
 			- Choosing the pivot can have a serious impact on the quicksort performance. Always choosing the largest or smallest element in the array will have a negative hit in speed.
-			- Randomly choose
+			- Randomly choose pivot -> select a random position between left and right inclusive and if needed swap the selected element to move it to the rightmost position so we can move on with the rest of the algorithm with no further changes
 			  logseq.order-list-type:: number
+			- logseq.order-list-type:: number

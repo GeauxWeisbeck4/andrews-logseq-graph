@@ -165,4 +165,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- 2.	Find the rightmost index q such that d[p] < d[q]; d[q] is the least value to the right of d[p]greater than it.
 			- 3.	Swap the values of d[p] and d[q]; now the values from d[p + 1] to the end of d will be in descending order.
 			- 4.	Reverse the list of values from d[p + 1] to the end of d.
-			-
+			- ![image.png](../assets/image_1746666999140_0.png)
+			- Step 1 sets p to point at 3, because 3 < 9; all other elements from the right (976521) are in descending order. Step 2 sets q to point at 5, the least value to the right of 3 that is greater than it. Step 3 swaps the values pointed by p and q; values to the right of p are again in descending order (976321). Step 4 ends by reversing the values to the right of p, which end in ascending order (123679), and you get the next permutation: 8405123679.
+			- With this logic, you can see the complete version of the 
+			  cryptarithmetic puzzle solver by adding the code to generate permutations:

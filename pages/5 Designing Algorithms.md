@@ -153,10 +153,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Puzzles that have been replaced by letters of the alphabet. Goal for the solver is to find which letter stands for which digit. Usually no numbers may start with zero, all letters hsould have different values, and the equation should translate to a phrase that makes sense.
 				- ![image.png](../assets/image_1746666670907_0.png)
 			- You could solve this sort of puzzle with careful analysis (see question 5.7 for another example), but here you will write a solver that goes through all possible combinations of digits, checking whether any work. 
-			  In this example, given that there are 10 digits, you need to check 10! (3,628,800) combinations, but some puzzles have numeric bases other than 10, so in general, this is an *O*(*n*!) algorithm. A similar example (in terms of its solution) is the traveling salesman problem that provides a list of *n*
-			   cities and the distances between each pair of cities; you need to find 
-			  the shortest possible route that visits each city only once, returning 
-			  to the starting city. The solution to this is likewise *O*(*n*!),
-			   and the algorithm is similar to the one you’ll see next. (You’ll also 
-			  see a different type of solution using a greedy algorithm for this 
-			  problem, later in this chapter.)
+			  In this example, given that there are 10 digits, you need to check 10! (3,628,800) combinations, but some puzzles have numeric bases other than 10, so in general, this is an *O*(*n*!) algorithm. A similar example (in terms of its solution) is the traveling salesman problem that provides a list of *n* cities and the distances between each pair of cities; you need to find the shortest possible route that visits each city only once, returning to the starting city. The solution to this is likewise *O*(*n*!), and the algorithm is similar to the one you’ll see next. (You’ll also 
+			  see a different type of solution using a greedy algorithm for this problem, later in this chapter.)

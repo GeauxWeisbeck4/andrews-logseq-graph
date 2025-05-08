@@ -157,3 +157,12 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			  see a different type of solution using a greedy algorithm for this problem, later in this chapter.)
 			- What algorithm do we need? The idea is simple: try all combinations of digits from 0123456789 to 9876543210, and check for each one whether the puzzle is solved. (In this case, you’ll use only the first eight digits, but that really doesn’t change anything.) You could design the main logic as follows, assuming that puzzle() is a function to test whether a combination is valid:
 			- The digits parameter ❶ will have the set of digits that you’ll use for the problem; although in this case, 0 to 9 are the possible values, you may as well write code that could be used for cryptarithmetic puzzles in other bases. Make a local copy of the set of digits ❷ to avoid modifying the original argument and to avoid a side effect (as discussed in Chapter 2), and sort it to go through the combinations in ascending order. Then set a loop ❸ that will exit when you either find a solution or decide none exists. If the current combination of digits works out ❹, log it and exit; otherwise, generate the next combination of digits ❺ and keep looping, unless you reach the last combination, and then you’ll know that the problem has no solution.
+			- Generating the next permutation of a given set is a 
+			  well-known algorithm, likely discovered by Indian mathematician Narayana
+			  Pandita in the 14th century. Assuming that the current permutation is 
+			  stored in array d, it requires four steps, in order:
+			- 1.	Find the rightmost index p such that d[p] < d[p + 1]; if no such p exists, you were already at the last permutation, and the algorithm finishes.
+			- 2.	Find the rightmost index q such that d[p] < d[q]; d[q] is the least value to the right of d[p]greater than it.
+			- 3.	Swap the values of d[p] and d[q]; now the values from d[p + 1] to the end of d will be in descending order.
+			- 4.	Reverse the list of values from d[p + 1] to the end of d.
+			-

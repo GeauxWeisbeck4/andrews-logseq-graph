@@ -73,4 +73,12 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				- Go in order ❶ from the first place in the array to the last. The m variable ❷ keeps track of the position of the minimum value already found. As you loop through the yet unsorted numbers ❸, if you find a new minimum candidate ❹, you update m. After finishing this loop, if the minimum isn’t already in place ❺, do a swap.
 				- The order of this algorithm is, again, *O*(*n*2). You have to look at *n* elements to find what should go in the first place; then look at *n* – 1 for the second place, *n* – 2 for the third, and so on. You already know this sum is *O*(*n*2). The algorithm in the next section is also based on how you’d sort playing cards, but it has slightly better performance.
 	- ## Insertion Sort
-		- This time lets take the first card, which is clearly in order by itself. Next look at the second card and either place it before the first if it's lower or leave it where it is if it's higher.
+		- This time lets take the first card, which is clearly in order by itself. Next look at the second card and either place it before the first if it's lower or leave it where it is if it's higher. Now you have two cards in order. Look at the third card and decide where it should go among the previous two. Place it there. Insert in between cards that you have already sorted.
+			- ![image.png](../assets/image_1746696628577_0.png)
+			- Start with a single card in order, in this case, number 34. Then 
+			  consider the next value, 12, and place it to the left of 34, so the two 
+			  numbers are in order. Then consider 22, which goes between 12 and 34, 
+			  and now three values are ordered. Continue working this way, always 
+			  inserting the next number where it belongs among the previously sorted 
+			  ones, until you reach the last line. After placing 14 among the already 
+			  sorted numbers, the whole array becomes ordered.

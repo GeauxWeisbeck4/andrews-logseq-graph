@@ -15,4 +15,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- Given an array, the sort method reorders the array in place using an optional comparison function (toSorted - newer method - doesn't sort in place but instead produces a new sorted version of the array.)
 				- If no function is provided, JavaScript converts elements to strings and then sorts lexicographically
 				- ```
+				  const a = [22, 9, 60, 12, 4, 56];
+				  a.sort();
+				  console.log(a);
 				  ```

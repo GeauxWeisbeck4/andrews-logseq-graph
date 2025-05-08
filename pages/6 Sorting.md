@@ -82,3 +82,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  inserting the next number where it belongs among the previously sorted 
 			  ones, until you reach the last line. After placing 14 among the already 
 			  sorted numbers, the whole array becomes ordered.
+			- Set up a loop that starts at the second place in the array and goes to the end ❶, and loop back as long as the list isn’t in order ❷, swapping to get new numbers in place ❸.
+			- Looking at this carefully, you’ll notice it’s doing too many swaps to get the new element to its place.
+			- You can quickly optimize the code to avoid that and do just one swap per loop:

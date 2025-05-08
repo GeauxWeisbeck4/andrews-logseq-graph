@@ -150,4 +150,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			   you’ll test the function twice: adding a true and adding a false to the
 			   list of arguments, so all combinations will be tested eventually.
 		- ### Solving Cryptoarithmetic Puzzles
-		- Puzzles that have been replaced by letters of the alphabet. Goal for the solver is to find which letter stands for which digit.
+			- Puzzles that have been replaced by letters of the alphabet. Goal for the solver is to find which letter stands for which digit.

@@ -172,3 +172,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- The function is called with all 10 digits ❶, but you use only the first 8, ignoring the last 2. If a leading digit is 0 ❷, the solution isn’t valid, so reject that out of hand. If there are no leading zeros ❸, compute the values of the three words (SEND, MORE, and MONEY) and we check whether they fulfill the original equation. Given this function, all you need to do is pass it to the solve() function ❹ and wait (very little) for the solution to appear.
 	- ## Greedy Algorithms
 		- A set of algorithms that may not always work because they always attempt to make the best choice at every time they have to make a choice. They ensure the algorithm proceeds quickly without having to backtrack at the expense of accuracy. It doesn't necessarily always make the best choice because it doesn't look far enough ahead. In the right circumstances, they do work, but other times they don't.
+		- ### How to Make Change
+		- How do you make change with the fewest bills and coins? With greedy algorithms you follow a simple rule - at each step choose as many as possible units of the largest possible denomination and keep going until you're done.
+		-

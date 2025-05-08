@@ -8,4 +8,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## The Sorting Problem
 		- A sorting algorithm is an algorithm that given a list of records containing a key and some data, reorders the list so that the keys are in non-decreasing order (no key is smaller than its preceding key) and the output list is a permutation of the input list, retaining all original records.
 		- ### Sorting Stability
+			- Maintains same order as the input in terms of where keys and elements end up in sorting algorithm -> if one element preceded another and both  had the same key, in the ordered input, the first one will precede the second
 			-

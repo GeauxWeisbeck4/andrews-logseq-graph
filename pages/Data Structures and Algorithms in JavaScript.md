@@ -25,4 +25,5 @@ tags:: JavaScript, Data Structures, Algorithms, Typescript, Computer Science, Pr
 	  considering several strategies for discovering solutions to specific 
 	  problems.
 	- ## [[5 Designing Algorithms]]
--
+	- ## [[6 Sorting]]
+	-

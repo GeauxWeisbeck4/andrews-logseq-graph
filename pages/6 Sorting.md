@@ -12,4 +12,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- You can add an extended key to make sort more stable
 		- ### JavaScript's Own Sort Method
 			- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-			- Given an array, the sort method reorders the array in place using an optional comparison function ()
+			- Given an array, the sort method reorders the array in place using an optional comparison function (toSorted - newer method - doesn't sort in place but instead produces a new sorted version of the array.)
+				- If no function is provided, JavaScript converts elements to strings and then sorts lexicographically
+				- ```
+				  ```

@@ -129,3 +129,17 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		   than 14. The same procedure (select the pivot, rearrange, and sort 
 		  recursively) is applied to each subarray until the whole array is 
 		  sorted.
+		- First, check whether there’s actually anything to sort; if the left pointer is equal to or greater than the right one, you’re done ❶. The rightmost element will be the pivot ❷. Next, go through the array from left to right ❸
+		  in a fashion reminiscent of the insertion sort, exchanging elements if 
+		  needed so smaller elements move to the left, greater ones to the right, 
+		  and the pivot ends at position p ❹.
+		  It would be a good idea to simulate a run of the pivoting code by hand.
+		  Despite its short length, it’s a bit tricky to get right. (What happens
+		  if the pivot value appears several times in the array? See question 
+		  6.10.) Finally, apply recursion to sort the two partitions ❺.
+		- Analysis shows that *on average*, quicksort works in *O*(*n* log *n*)
+		  time. However, the worst case is easy to find. Consider sorting an 
+		  already sorted (in ascending or descending order) array. Examining the 
+		  code shows that partitioning will always end with just one subarray, and
+		  you’ll have the equivalent of a selection sort or bubble sort, which 
+		  means performance goes down to *O*(*n*2). But you can fix that.

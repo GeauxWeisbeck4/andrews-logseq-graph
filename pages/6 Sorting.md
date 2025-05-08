@@ -52,4 +52,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Sinking Sort and Shuttle Sort
 		- Sinking sort is similar to bubble sort, but instead of greatest values moving to the end of the array, the lowest values quickly sink to the beginning of the array, but it takes longer for the greatest values to go to their places
 			- We can alternate a pass of bubbling and a pass of sinking to get an enhanced algorithm called a shuttle sort (cocktail shaker or bidirectional bubble sorts)
-			- Starting with the same elements, the firs tpass
+			- Starting with the same elements, the first pass is the same as bubble sort's, moving 60, which is the greatest value in the array to the rightmost position. The second pass goes right to left and moves 04 the smallest value in the array to the leftmost position. The third pass again goes left to right and moves 56 to its place. After that it goes right to left, left to right, and so on.

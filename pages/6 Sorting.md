@@ -43,3 +43,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		- Each method we will try will get better in terms of optimal performance as we go on
 		- ### Bubbling Up and Down
 			- Easy to implement and only for smaller sets of data
+		- ## Bubble Sort
+			- ![image.png](../assets/image_1746693433530_0.png)
+			-

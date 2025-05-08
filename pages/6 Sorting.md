@@ -42,4 +42,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Sorting with Comparisons
 		- Each method we will try will get better in terms of optimal performance as we go on
 		- ### Bubbling Up and Down
-			-
+			- Easy to implement and only for smaller sets of data

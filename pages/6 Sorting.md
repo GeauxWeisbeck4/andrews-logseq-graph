@@ -37,4 +37,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  assume stability, so you might have to resort to the solution described 
 				  in “Sorting Stability” on [page 93](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter6.xhtml#pg_93). Also, keep in mind that any given engine may just not correctly implement the standard.
 		- ### Sort Performance
-			- If you are comparing elements to sort an array, its indirectly implied that you're deciding on what was the original permutation. Well
+			- If you are comparing elements to sort an array, its indirectly implied that you're deciding on what was the original permutation. Well-place questions divide the range of options in half, so you need to know how many questions are needed for n! possibilities -> Equivalent ot asking how many times you should divide n by 2 until you get down to 1

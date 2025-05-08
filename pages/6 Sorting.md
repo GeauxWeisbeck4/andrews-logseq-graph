@@ -14,9 +14,11 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 			- Given an array, the sort method reorders the array in place using an optional comparison function (toSorted - newer method - doesn't sort in place but instead produces a new sorted version of the array.)
 				- If no function is provided, JavaScript converts elements to strings and then sorts lexicographically
-				- ```
+				- ```javascript
 				  const a = [22, 9, 60, 12, 4, 56];
 				  a.sort();
 				  console.log(a);
 				  ```
-			- T o
+			- To accomodate we need to provide a function that will return two elements, a and b, and return a negative value if a should precede b, positive value if a should follow b, and zero if both keys are equal and if a and b can be in any order - its an easy fix
+				- ```javascript
+				  ```

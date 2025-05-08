@@ -5,4 +5,5 @@ tags:: Computer Science, Data Structures, Computer Architecture, Software Design
 - published:: 2019
 - pages:: 464
 - # The Secret Life of Programs
--
+	- ## [[Chapter 1 - The Internal Language of Computers]]
+	-

@@ -94,4 +94,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  methods.
 	- ## Making Bigger Jumps with Comb and Shell Sort
 		- The idea of swapping elements and making the bubble up or sink down isn't bad, and applying the idea of making larger jumps (swapping elements that are farther apart) eventually leads to a better algorithm, shell sort. The variant that is combined with bubble sort variant is comb sort
-		-
+	- ## Comb Sort
+		- Lets look at bubble sort and consider how keys move in an array like rabbits and turtles. Rabbits represent the large values near the beginning o fthe list which quickly move to their new places at the end of the array, swap after swap. On the other hand, turtles represent the small values near the end of the list, which slowly move to their places in a single swap per pass

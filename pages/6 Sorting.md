@@ -147,4 +147,15 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- Choosing the pivot can have a serious impact on the quicksort performance. Always choosing the largest or smallest element in the array will have a negative hit in speed.
 			- Randomly choose pivot -> select a random position between left and right inclusive and if needed swap the selected element to move it to the rightmost position so we can move on with the rest of the algorithm with no further changes
 			  logseq.order-list-type:: number
-			- logseq.order-list-type:: number
+			- We’ll look at random selection in more detail in [Chapter 8](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter8.xhtml), but the way you calculate iPivot (the position of the pivot) ❶ selects a value from left to right
+			  inclusive with equal odds. The rest of the sorting algorithm assumes 
+			  that the chosen pivot was at the right of the array, so if the chosen 
+			  pivot is elsewhere ❷, just do a swap.
+			- This random selection solves the worst-case behavior for 
+			  almost-sorted arrays, but there’s still the (assuredly low) probability 
+			  that you’ll always just happen to pick the highest or lowest value in 
+			  the array to be sorted, and in that case, performance will suffer.
+			- What’s the ideal pivot? Choosing the array’s median (the 
+			  value that splits the array in two) would be optimum. A rule that comes 
+			  close is called the *median of three*: choose the median of the left, middle, and right elements of the array:
+			-

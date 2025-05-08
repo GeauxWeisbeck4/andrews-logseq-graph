@@ -108,4 +108,14 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Shell Sort
 		- ![image.png](../assets/image_1746697417969_0.png)
 		- In the first pass, we do an insertion sort, but for elements set four places apart, which leads to an array consisting of four short-ordered sequences. Then lower the gap size to 2 and repeat the sort. The array now consists of two ordered sequences. Eventually you'll reach gap size of 1 and you'll just do an insertion sort because of the previous partial sorts with fewer comparisons or swaps as the normal algorithm which is the advantage of shell sort.
+		- First select what gaps to use ❶,
+		   keeping in mind that the last one to be applied must be 1. You’ll find 
+		  many suggestions online as to which sequence to use, but this example 
+		  will use Knuth’s proposal (1, 4, 13, 40, 121, . . . , with each term 
+		  being triple the previous one, plus 1), which leads to an *O*(*n*1.5) algorithm. Then, you take gaps in decreasing order ❷ and essentially do an insertion sort ❸ but for elements gap spaces apart ❹.
+		   With larger gaps, you’re ordering sequences of fewer elements, but as 
+		  you decrease the gap size, you deal with longer sequences that tend to 
+		  be almost in order, so insertion sort behaves well.
+	- ## Going for Speed with Quicksort
+		- These algorithms will now achieve the O(n log n) theoretical speed limit - the worst being a quadratic performance
 		-

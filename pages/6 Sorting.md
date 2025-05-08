@@ -93,4 +93,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  theoretically more convenient, but practically slower, alternative 
 			  methods.
 	- ## Making Bigger Jumps with Comb and Shell Sort
-		- The idea of swapp
+		- The idea of swapping elements and making the bubble up or sink down isn't bad, and applying the idea of making larger jumps (swapping elements that are farther apart) eventually leads to a better algorithm, shell sort. The variant that is combined with bubble sort variant is comb sort
+		-

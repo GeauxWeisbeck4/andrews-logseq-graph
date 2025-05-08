@@ -61,4 +61,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  show that it can’t do any worse, for in each pass, it places one number at its final position, so after having placed (*n* – 1) numbers at their place, it will be done, the same as bubble sort.
 		- ### Sorting Strategies for Sorting Cards
 		- ## Selection Sort
-			-
+			- Look for the lowest card and place it farthest to the let in your hand. Then look for the next lowest card and place it after the first and keep doing that, always selecting the lowest remaining card and placing it next to the already sorted cars.

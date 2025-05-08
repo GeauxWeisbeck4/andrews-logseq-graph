@@ -187,3 +187,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  differences are in the selection of pivots and partitioning. For 
 		  performance reasons, you’ll use the hybrid approach and turn to an 
 		  insertion sort if the array to be sorted is small enough; for example:
+		-

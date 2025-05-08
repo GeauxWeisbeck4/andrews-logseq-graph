@@ -97,3 +97,14 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Comb Sort
 		- Lets look at bubble sort and consider how keys move in an array like rabbits and turtles. Rabbits represent the large values near the beginning o fthe list which quickly move to their new places at the end of the array, swap after swap. On the other hand, turtles represent the small values near the end of the list, which slowly move to their places in a single swap per pass
 		- We can perform some passes with swaps, but instead of comparing one element with the next one, we'll consider larger gaps. Rabbits will jump further distances toward the right, but turtles will correspondingly jump further distances toward the left.
+		- It has been determined empirically that the first gap should equal the array’s length divided by 1.3, the “shrink factor” ❶, and successive gaps will always be 1.3 times smaller ❷. When the gap becomes 1 ❸, just apply bubble sort, and you’re done. While the gap is greater than 1 ❹,
+		  you do what’s essentially the central logic of bubble sort, but instead
+		  of comparing elements one place apart, you compare elements gap places apart.
+		- Comb sort usually performs better than bubble sort, but it’s still *O*(*n*2) in the worst case and becomes *O*(*n* log *n*)
+		  in the best case. However, that’s not why we’re considering this idea; 
+		  rather, the concept of sorting elements that are far apart provides real
+		  benefits, and you’ll see that Shell sort that does exactly that in a 
+		  way similar to comb sort.
+	- ## Shell Sort
+		- ![image.png](../assets/image_1746697417969_0.png)
+		-

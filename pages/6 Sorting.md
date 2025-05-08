@@ -167,8 +167,23 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 	- ## Hybrid Version
 		- Quicksort is fast, but all the pivots and recursion have an impact on 
 		  running times, so for small arrays, a combination of simpler algorithms 
-		  may actually perform faster. You can apply a *hybrid algorithm* that uses two distinct methods together. For instance, you may find that for arrays under a certain cutoff limit, an insertion sort performs better, so whenever you want 
-		  to sort an array smaller than the limit, switch to that algorithm:
+		  may actually perform faster. You can apply a *hybrid algorithm* that uses two distinct methods together. For instance, you may find that for arrays under a certain cutoff limit, an insertion sort performs better, so whenever you want to sort an array smaller than the limit, switch to that algorithm:
 		- The lines in bold are all you need to change. Define the cutoff limit, 
 		  and when sorting, if the array is small enough, apply the alternative 
 		  sort.
+	- ## Dual-Pivot Version
+		- You can extend the idea of splitting an array to be sorted in two parts,
+		   separated by a pivot, to splitting the array in three parts, separated 
+		  by two pivots. This dual-pivot version is usually faster. (Java uses it 
+		  as its default sorting algorithm for primitive types.) Choose the 
+		  leftmost and rightmost elements as pivots, as shown in [Figure 6-9](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter6.xhtml#fig6-9).
+		- ![image.png](../assets/image_1746698601685_0.png)
+		- Start by choosing 34 and 14 as pivots, and rearrange the 
+		  array so that all values less than 14 (12, 9, 4) come first, then 14 
+		  itself, then values between 14 and 34 (just 22), then 34, and finally 
+		  values greater than 34 (60, 56). Each subarray is then sorted again with
+		  the same method.
+		- The algorithm is similar to a basic quicksort; the main 
+		  differences are in the selection of pivots and partitioning. For 
+		  performance reasons, you’ll use the hybrid approach and turn to an 
+		  insertion sort if the array to be sorted is small enough; for example:

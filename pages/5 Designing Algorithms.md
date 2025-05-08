@@ -171,4 +171,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			  cryptarithmetic puzzle solver by adding the code to generate permutations:
 			- The function is called with all 10 digits ❶, but you use only the first 8, ignoring the last 2. If a leading digit is 0 ❷, the solution isn’t valid, so reject that out of hand. If there are no leading zeros ❸, compute the values of the three words (SEND, MORE, and MONEY) and we check whether they fulfill the original equation. Given this function, all you need to do is pass it to the solve() function ❹ and wait (very little) for the solution to appear.
 	- ## Greedy Algorithms
-		- A set of algorithms that may not always work.
+		- A set of algorithms that may not always work because they always attempt to make the best choice at every time they have to make a choice. They ensure the algorithm proceeds quickly without having to backgt

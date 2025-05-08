@@ -122,4 +122,10 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		- Partition-exchange sort was created by Tony Hoare in the 1960s as a divide and conquer algorithm with high speed
 		- Select a pivot element from the array to be sorted and redistribute all the other elements into two subarrays, according to whether they are smaller or larger than the pivot. The array ends with lower values first, then the pivot, and then the higher values. The each subarray is sorted recursively and when it's done, the whole array is sorted.
 		- ![image.png](../assets/image_1746697881788_0.png)
-		-
+		- Let’s say we always choose the rightmost element of the array as the 
+		  pivot. (It won’t prove to be a very wise option, as you’ll see.) In this
+		   case, the first choice is 14, and you rearrange the array so all values
+		   less than 14 come first, then 14 itself, and finally all values greater
+		   than 14. The same procedure (select the pivot, rearrange, and sort 
+		  recursively) is applied to each subarray until the whole array is 
+		  sorted.

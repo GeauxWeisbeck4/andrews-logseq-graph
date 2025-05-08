@@ -158,4 +158,10 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- What’s the ideal pivot? Choosing the array’s median (the 
 			  value that splits the array in two) would be optimum. A rule that comes 
 			  close is called the *median of three*: choose the median of the left, middle, and right elements of the array:
-			-
+			- Testing this code with all possible permutations of three values shows that arr[right]
+			  always ends with the middle value. Even better, you might pick the 
+			  “ninther,” defined as a “median of medians”: divide the array in three 
+			  parts, apply the median of three to each third, and then take the median
+			  of those three values.
+			- You can help quicksort become faster by selecting pivots carefully, but you can enhance it even further.
+		-

@@ -180,4 +180,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Requries a brute-force search but a greedy algorithm solves it well. Imagine a salesman has to do a tour, visiting a city on a list once and then returning to a starting point - this is called a Hamiltonian cycle. Distances (or costs) for traveling between cities is known. What is the cheapest way to achieve the task?
 			- A greedy algorithm for this problem (might not find the best solution, but performs quickly) would proceed as follows: at each step visit the nearest not-yet-visited city. Under certain circumstances, it might find the optimal solution.
 		- ### Minimum Spanning Tree
-			-
+			- Imagine a TV cable

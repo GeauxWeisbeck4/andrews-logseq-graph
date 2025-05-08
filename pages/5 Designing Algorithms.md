@@ -169,3 +169,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 			- Step 1 sets p to point at 3, because 3 < 9; all other elements from the right (976521) are in descending order. Step 2 sets q to point at 5, the least value to the right of 3 that is greater than it. Step 3 swaps the values pointed by p and q; values to the right of p are again in descending order (976321). Step 4 ends by reversing the values to the right of p, which end in ascending order (123679), and you get the next permutation: 8405123679.
 			- With this logic, you can see the complete version of the 
 			  cryptarithmetic puzzle solver by adding the code to generate permutations:
+			- The function is called with all 10 digits ❶, but you use only the first 8, ignoring the last 2. If a leading digit is 0 ❷, the solution isn’t valid, so reject that out of hand. If there are no leading zeros ❸, compute the values of the three words (SEND, MORE, and MONEY) and we check whether they fulfill the original equation. Given this function, all you need to do is pass it to the solve() function ❹ and wait (very little) for the solution to appear.
+	-

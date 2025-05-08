@@ -107,4 +107,4 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  way similar to comb sort.
 	- ## Shell Sort
 		- ![image.png](../assets/image_1746697417969_0.png)
-		-
+		- In the first pass, we do an insertion sort, but for elements set four places apart, which leads to an array consisting of four short-ordered sequences

@@ -120,4 +120,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		- These algorithms will now achieve the O(n log n) theoretical speed limit - the worst being a quadratic performance
 	- ## Quicksort
 		- Partition-exchange sort was created by Tony Hoare in the 1960s as a divide and conquer algorithm with high speed
-		- Select a pivot element from the array to be sorted and redistribute all the other elements into two subarrays
+		- Select a pivot element from the array to be sorted and redistribute all the other elements into two subarrays, according to whether they are smaller or larger than the pivot. The array ends with lower values first, then the pivot, and then the higher values. The each subarray is sorted recursively and when it's done, the whole array is sorted.
+		- ![image.png](../assets/image_1746697881788_0.png)
+		-

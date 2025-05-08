@@ -85,3 +85,12 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			- Set up a loop that starts at the second place in the array and goes to the end ❶, and loop back as long as the list isn’t in order ❷, swapping to get new numbers in place ❸.
 			- Looking at this carefully, you’ll notice it’s doing too many swaps to get the new element to its place.
 			- You can quickly optimize the code to avoid that and do just one swap per loop:
+			- The first loop ❶ is exactly the same as earlier, but the difference lies within. You set
+			  the number to be inserted among the previously sorted aside ❷, and you loop to find where it should go ❸, pushing values that are greater to the right. At the end ❹, you place the new value in its final position.
+			- Insertion sort is a simple algorithm, which makes it a 
+			  good choice for smaller arrays. Later in the chapter we’ll look at how 
+			  it’s sometimes used in hybrid sorting algorithms as a replacement for 
+			  theoretically more convenient, but practically slower, alternative 
+			  methods.
+	- ## Making Bigger Jumps with Comb and Shell Sort
+		- The idea of swapp

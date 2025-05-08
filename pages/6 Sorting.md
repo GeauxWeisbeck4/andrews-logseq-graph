@@ -31,4 +31,10 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  If the years are equal, you can compare months with the same kind of 
 				  logic ❸, and if the months are also equal ❹, you do the same once more for days. If the dates are equal, you resort to comparing names ❺, and since you cannot use math and just subtract dates, you need to make actual comparisons, date part by date part. The final return 0 is done ❻ only if all fields were compared and found to match.
 				- If you sort the people array with the dateNameCompare(...) function you just wrote, you get the expected result:
-				-
+				- Finally, consider stability. Originally, the specification for the .sort(...)
+				   method didn’t require it, but ECMAScript 2019 added the requirement. Be
+				   aware, however, that if using an earlier JavaScript engine, you cannot 
+				  assume stability, so you might have to resort to the solution described 
+				  in “Sorting Stability” on [page 93](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter6.xhtml#pg_93). Also, keep in mind that any given engine may just not correctly implement the standard.
+		- ### Sort Performance
+			-

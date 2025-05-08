@@ -70,4 +70,6 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  next-to-last line, in which no swap is needed because 56 was already in 
 			  the correct place.
 			- `selectionSort.js`
-			-
+				- Go in order ❶ from the first place in the array to the last. The m variable ❷ keeps track of the position of the minimum value already found. As you loop through the yet unsorted numbers ❸, if you find a new minimum candidate ❹, you update m. After finishing this loop, if the minimum isn’t already in place ❺, do a swap.
+				- The order of this algorithm is, again, *O*(*n*2). You have to look at *n* elements to find what should go in the first place; then look at *n* – 1 for the second place, *n* – 2 for the third, and so on. You already know this sum is *O*(*n*2). The algorithm in the next section is also based on how you’d sort playing cards, but it has slightly better performance.
+				-

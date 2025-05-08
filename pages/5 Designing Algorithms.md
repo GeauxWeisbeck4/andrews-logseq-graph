@@ -176,4 +176,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- How do you make change with the fewest bills and coins? With greedy algorithms you follow a simple rule - at each step choose as many as possible units of the largest possible denomination and keep going until you're done.
 		- For $229.60
 			- Start by using two $100 bills, then one $20, then a $5, four $1s, two quarters, and a dime. No other solution has fewer bills and coins -> This greedy algorithm will always succeed, depending on the available denominations.
-		-
+		- ### The Travelling Salesman Problem
+			- Requries a brute-force search but a

@@ -21,4 +21,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  ```
 			- To accomodate we need to provide a function that will return two elements, a and b, and return a negative value if a should precede b, positive value if a should follow b, and zero if both keys are equal and if a and b can be in any order - its an easy fix
 				- ```javascript
+				  const a = [22, 9, 60, 12, 4, 56];
+				  a.sort((a, b) => a - b);
+				  console.log(a);
 				  ```

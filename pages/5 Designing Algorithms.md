@@ -174,4 +174,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, No Starch Pre
 		- A set of algorithms that may not always work because they always attempt to make the best choice at every time they have to make a choice. They ensure the algorithm proceeds quickly without having to backtrack at the expense of accuracy. It doesn't necessarily always make the best choice because it doesn't look far enough ahead. In the right circumstances, they do work, but other times they don't.
 		- ### How to Make Change
 		- How do you make change with the fewest bills and coins? With greedy algorithms you follow a simple rule - at each step choose as many as possible units of the largest possible denomination and keep going until you're done.
-		-
+		- For $229.60
+			- Start by using two $100 bills, then one $20, then a $5, four $1s, two quarters, and a dime. No other solution has fewer bills and coins -> This

@@ -247,3 +247,14 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		   remember that position 0 actually corresponds to key 22, position 1 to 
 		  key 23, and so on.) Finally, go through the bitmap, outputting the 
 		  numbers whose bits are set; it’s simple.
+		- First make a copy of the input array ❶ to simplify the next step, which is determining the minimum and maximum keys ❷. (This could be done in a single loop a tad more efficiently.) Then create a bitmap array of the right length ❸,
+		   but in reality you’ll be using common booleans, not bits. You need to 
+		  be careful with indices, because JavaScript’s arrays always start at 
+		  zero; a bit of index math will be needed to relate keys to array 
+		  positions. Then go through the input array ❹ and check whether the key already appeared. If so ❺, there’s a problem. If not ❻, just mark that the number did appear. Finally, go through the bitmap ❼, and whenever you find a set flag ❽, output the corresponding number.
+		- Not being able to allow for duplicate keys is a serious limitation, and 
+		  dealing with numbers only is another; you need to be able to sort 
+		  elements consisting of a key + data, as in all the other algorithms 
+		  you’ve explored so far.
+	- ## Counting Sort
+		- The previous example is limited by calculating where each sorted element should go

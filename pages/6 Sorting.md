@@ -257,4 +257,17 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  elements consisting of a key + data, as in all the other algorithms 
 		  you’ve explored so far.
 	- ## Counting Sort
-		- The previous example is limited by calculating where each sorted element should go
+		- The previous example is limited by calculating where each sorted element should go - to do that we need to count how many times each key appears and then use that info to decide where to place sorted elements in the output array
+		- ![image.png](../assets/image_1746835112977_0.png)
+		- In the same way as with bitmap sort, you need to find the minimum and 
+		  maximum values in the array to be sorted and set up an appropriate array
+		   with counters, all initialized to zero. (Again, remember that position 0
+		   corresponds to the minimum key, which is 47 in this case; position 1 
+		  corresponds to 48, and so on.) Then go through the array again, 
+		  incrementing the corresponding counters. After you have all the counts, 
+		  you can follow an easy procedure to determine where each key goes. For 
+		  instance, elements with the minimum key (47) start at position 0 of the 
+		  output array; elements with the next key (48) follow two places later 
+		  (because there were two 47s) at place 2. Each new key is placed to the 
+		  right of the previous key, leaving as many empty spaces as needed to 
+		  place all the previous elements.

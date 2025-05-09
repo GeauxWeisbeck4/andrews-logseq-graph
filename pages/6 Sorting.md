@@ -228,4 +228,9 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  that make up the complete Tim sort algorithm.
 	- ## Sorting Without Comparisons
 		- What if you are working customer service and you get an email that you could be for many different reasons. How can you simplify classifications?
-		- We'll use values to figure out where they should go in inal ordered list
+		- We'll use values to figure out where they should go in inal ordered list. No talways possible, but performance becomes O(n)
+	- ## Bitmap Sort
+		- Three suppositions
+			- Going to sort only numbers on their own (no key + data)
+			  logseq.order-list-type:: number
+			- logseq.order-list-type:: number

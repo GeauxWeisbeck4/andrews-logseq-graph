@@ -203,4 +203,11 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  You can establish this invariant from the beginning by setting mm to left + 1 and making it go up until it reaches the end of the array ❷. If the element at mm is less than pivotLeft ❸, a mere swap maintains the invariant. If the element at mm is greater than pivotRight ❹, you have to do a bit more work to maintain the invariant, moving rr to the left. (Remember, the idea is to keep the invariants; this loop ensures the next-to-last one.) After the loop is done ❺, swap the pivots to their final places and apply recursion to sort the three partitions ❻.
 	- ## Merging for Performance with Merge Sort
 		- Merge sort guarantees constant performance, but has a cost of higher need of memory
-		- Does all sorting by merging -> if you have two ordered sequences of values, n in total, merging them into a single-order sequence can be done in an O(n
+		- Does all sorting by merging -> if you have two ordered sequences of values, n in total, merging them into a single-order sequence can be done in an O(n) process.
+			- Apply recursion ->
+				- Split array to be sorted into two halves
+				  logseq.order-list-type:: number
+				- Recursively sort each half
+				  logseq.order-list-type:: number
+				- Merge both ordered ha
+				  logseq.order-list-type:: number

@@ -233,4 +233,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		- Three suppositions
 			- Going to sort only numbers on their own (no key + data)
 			  logseq.order-list-type:: number
-			- logseq.order-list-type:: number
+			- Know the possible range of numbers and its not very big (i.e 64-bit numbers that range from lowest to highest would make you forget about attempting algorithm)
+			  logseq.order-list-type:: number
+			- Numbers
+			  logseq.order-list-type:: number

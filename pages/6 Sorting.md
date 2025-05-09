@@ -239,4 +239,11 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  logseq.order-list-type:: number
 		- Assume all bits are turned off and whenever we read a number, set that bit to on. Go through bits in order and whenever a bit is set, output the corresponding number and your done
 			- ![image.png](../assets/image_1746834725915_0.png)
-			-
+		- You must go through all the numbers to find the minimum and maximum 
+		  values to define the size of the bitmap. After that, go through the 
+		  numbers again, setting bits whenever a number appears. In [Figure 6-11](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter6.xhtml#fig6-11),
+		   bits corresponding to numbers 22, 24, 25, 27, 28, and 31 are set. 
+		  (JavaScript mandates that all arrays start at position 0, so you have to
+		   remember that position 0 actually corresponds to key 22, position 1 to 
+		  key 23, and so on.) Finally, go through the bitmap, outputting the 
+		  numbers whose bits are set; it’s simple.

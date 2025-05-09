@@ -212,4 +212,19 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				- Merge both ordered halves into a single sequence
 				  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1746820734947_0.png)
-			-
+		- First, check whether you even need to sort ❶,
+		  which could include a hybrid approach, and if the array is small 
+		  enough, you’d apply some other method, not merge sort. Then split the 
+		  array in half ❷ and recursively sort each half ❸. Next, merge both sorted arrays ❹: ll and rr will traverse each array, and the output will go into the original array. Finally, return the sorted array.
+		- Merge sort has very good performance (despite the extra space needed to perform the merge), and it’s actually the basis of *Tim sort*,
+		  a stable adaptive method that’s widely used. Java utilizes it, 
+		  JavaScript also applies it in the V8 engine, and other languages use it 
+		  as well. We won’t delve into the actual implementation, as the algorithm
+		  is quite longer than the ones we’ve been considering (a couple of 
+		  implementations in GitHub run to almost 1,000 lines each). Tim sort 
+		  takes advantage of runs of elements that are already in order, merging 
+		  shorter runs to create longer ones, and applying an insertion sort to 
+		  make sure runs are long enough. You’ve already studied all the pieces 
+		  that make up the complete Tim sort algorithm.
+	- ## Sorting Without Comparisons
+		-

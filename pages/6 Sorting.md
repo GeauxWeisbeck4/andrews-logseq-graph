@@ -227,4 +227,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  make sure runs are long enough. You’ve already studied all the pieces 
 		  that make up the complete Tim sort algorithm.
 	- ## Sorting Without Comparisons
-		-
+		- What if you are working customer service and you get an email that you could be for many different reasons. How can you simplify classifications?
+		- We'll use values to figure out where they should go in inal ordered list

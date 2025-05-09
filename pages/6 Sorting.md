@@ -237,4 +237,5 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 			  logseq.order-list-type:: number
 			- Numbers are going to be duplicated; all numbers to sort will e different
 			  logseq.order-list-type:: number
-			- logseq.order-list-type:: number
+		- Assume all bits are turned off and whenever we read a number, set that bit to on. Go through bits in order and whenever a bit is set, output the corresponding number and your done
+			- ![image.png](../assets/image_1746834725915_0.png)

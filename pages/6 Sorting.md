@@ -209,5 +209,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 				  logseq.order-list-type:: number
 				- Recursively sort each half
 				  logseq.order-list-type:: number
-				- Merge both ordered ha
+				- Merge both ordered halves into a single sequence
 				  logseq.order-list-type:: number
+			- ![image.png](../assets/image_1746820734947_0.png)
+			-

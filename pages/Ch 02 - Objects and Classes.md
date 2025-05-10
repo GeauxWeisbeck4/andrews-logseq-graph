@@ -23,4 +23,6 @@ tags:: Software Design, OOP, Class, Python
 				- Allow people to ignore differences when using related things easier
 				- Bytes in a string represent characters and bytes in an image represent pixels, bytes in a function represent instructions.e
 				- `func_obj.py`
-					- When
+					- When Python executes this code, it creates an object in memory to print a string and assign the variable to it.
+				- ### Alias
+					-

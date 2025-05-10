@@ -34,5 +34,18 @@ tags:: Software Design, OOP, Class, Python
 				               perim -> square_perim()
 				               area -> square_area()
 				              }
+				              
+				  circle ->   {
+				  			  name -> "ci"
+				  			  radius -> 3
+				                perim -> circle_perim()
+				                circle_area -> circle_area()
+				  }
 				  ```
+		- The function `call` looks up the function stored in the dictionary,
+		  then calls that function with the dictionary as its first object;
+		  in other words,instead of using `obj.meth(arg)` we use `obj["meth"](obj, arg)`.Behind the scenes, this is (almost) how objects actually work.
+		  We can think of an object as a special kind of dictionary.
+		  A method is just a function that takes an object of the right kind
+		  as its first parameter (typically called `self` in Python).
 -

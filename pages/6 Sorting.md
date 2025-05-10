@@ -271,3 +271,14 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		  (because there were two 47s) at place 2. Each new key is placed to the 
 		  right of the previous key, leaving as many empty spaces as needed to 
 		  place all the previous elements.
+		- The first three lines of this algorithm are the same as the bitmap sort ❶,
+		   and you create a copy of the input array and determine the minimum and 
+		  maximum keys. You then create an array with the counts for all keys 
+		  (initialized to zero and needing the same kind of index math as in 
+		  bitmap sort ❷). Then go through the input data ❸ and increment counts for each key value. Now generate a new array ❹
+		   to calculate the starting place for elements with each key. The minimum
+		   key starts at position 0, and each key is a few spaces away from the 
+		  previous one, according to the count of the previous key ❺.
+		   (For example, if the previous count was 5, you’ll have the new key 5 
+		  places away from the first occurrence of the previous key.) Finally, use
+		   the place array to start positioning sorted elements in their right places ❻; each time an element goes into the output array, the corresponding place is incremented by 1 ❼ for the next element with the same key.

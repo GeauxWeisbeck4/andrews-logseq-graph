@@ -17,4 +17,6 @@ tags:: Software Design, OOP, Class, Python
 	- ## Section 2.1: Objects
 		- `shapes_original.py`
 			- Spec like this is called a contract because an object must satisfy it to be considered a shape -> It must provide methods with these names tat do what those names suggest
-				- We can derive
+				- We can derive classes from Shapes to represent squares and circles
+			- ### Polymorphism
+				- If two objects have same methods

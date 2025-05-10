@@ -28,4 +28,11 @@ tags:: Software Design, OOP, Class, Python
 					- Assigning a second variable to a function and referencing the second function doesn't alter or erase the connection between function and original name
 			- We can also store functions in lists and dictionaries `shapes_dict.py`
 				- ```
+				  square ->  { 
+				  			 name -> "sq"
+				  			 side -> 2
+				               perim -> square_perim()
+				               area -> square_area()
+				              }
 				  ```
+-

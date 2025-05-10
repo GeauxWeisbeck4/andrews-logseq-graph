@@ -25,4 +25,5 @@ tags:: Software Design, OOP, Class, Python
 				- `func_obj.py`
 					- When Python executes this code, it creates an object in memory to print a string and assign the variable to it.
 				- ### Alias
-					-
+					- Assigning a second variable to a function and referencing the second function doesn't alter or erase the connection between function and original name
+			-

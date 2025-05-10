@@ -282,3 +282,7 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		   (For example, if the previous count was 5, you’ll have the new key 5 
 		  places away from the first occurrence of the previous key.) Finally, use
 		   the place array to start positioning sorted elements in their right places ❻; each time an element goes into the output array, the corresponding place is incremented by 1 ❼ for the next element with the same key.
+		- Radix Sort
+			- The last sorting algorithm in this chapter is probably the oldest. It was used with Hollerith punch cards (see Figure 6-13) when tabulating census data, back in the days when IBM was founded.
+				- ![image.png](../assets/image_1746835569961_0.png)
+				-

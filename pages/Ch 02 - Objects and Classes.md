@@ -21,4 +21,6 @@ tags:: Software Design, OOP, Class, Python
 			- ### Polymorphism
 				- If two objects have same methods, we can use them interchangeably
 				- Allow people to ignore differences when using related things easier
-				- If byets
+				- Bytes in a string represent characters and bytes in an image represent pixels, bytes in a function represent instructions.e
+				- `func_obj.py`
+					- When

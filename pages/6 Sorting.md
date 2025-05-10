@@ -285,4 +285,203 @@ tags:: Programming Books, JavaScript, Data Structures, Algorithms, Computer Scie
 		- Radix Sort
 			- The last sorting algorithm in this chapter is probably the oldest. It was used with Hollerith punch cards (see Figure 6-13) when tabulating census data, back in the days when IBM was founded.
 				- ![image.png](../assets/image_1746835569961_0.png)
-				-
+	- Suppose you have a disordered set of punch cards, numbered in columns 1 to 6, and you want to sort them. Using a *classifier*, a machine that processes cards and separates them into bins according to the value on a specific column, you would follow these steps:
+	  
+	  	1.	Separate cards into bins according to column 6
+	   and choose cards with a 0, then cards with a 1, and so on, finishing 
+	  with cards with a 9. You have sorted the cards by the sixth column, but 
+	  you have to keep working.
+	  
+	  	2.	Redo the same process, but use column 5. When 
+	  you pick the cards up, you’ll find that they are sorted by two columns 
+	  (refer back to the “Sorting Stability” section on page 93 to understand why).
+	  
+	  	3.	Do the process again for columns 4, 3, 2, and 1, in that order, and you’ll end up with a totally sorted deck of cards.
+	  
+	  You’ll explore this algorithm in more detail in [Chapter 10](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter10.xhtml) when looking at lists, which will be the way you’ll emulate the bins.
+	- ###  Inefficient Sorting Algorithms
+	  
+	  We’ll finish on a not-too-serious note by considering 
+	  some algorithms that are really inefficient, going from bad to worse. 
+	  These algorithms are not intended for actual use!
+	- ####  Stooge Sort
+	  
+	  The name of this algorithm comes from the Three Stooges 
+	  comedy group, and if you’re familiar with them, its inefficiency will 
+	  remind you of their antics. The process to sort a list starts by 
+	  comparing its first and last elements and swapping them (if needed) to 
+	  ensure the greater one is at the end. Next, it recursively applies 
+	  Stooge sort to the initial two-thirds of the list, then it sorts the 
+	  last two-thirds of the list (which ensures that the last third will have
+	  the greatest values, in order), and finally, it sorts the first 
+	  two-thirds of the list again. The number of comparisons needed for *n* elements satisfies *C*(*n*) = 3*C*(2*n* / 3) + 1, so the algorithm has a complexity of *O*(*n*2.71), which makes it perform worse than bubble sort, but there’s even worse.
+	- ####  Slow Sort
+	  
+	  This algorithm was designed as a joke. Rather than 
+	  divide and conquer, it’s based on “multiply and surrender.” The authors 
+	  were proud to have found an algorithm worse than any that were 
+	  previously created. To sort an array with two or more elements, the 
+	  algorithm first splits it in half, and then it uses recursion to sort 
+	  each half. Finally, it compares the last element of each half and places
+	  it (swapping if needed) at the end of the original array. After doing 
+	  that, the algorithm proceeds to sort the list with the maximum 
+	  extracted. The number of comparisons for this algorithm satisfies *C*(*n*) = 2*C*(*n* / 2) + *C*(*n* – 1) + 1, and its time is *O*(*n* log *n*). It’s not even polynomial!
+	- ####  Permutation Sort
+	  
+	  In [Chapter 5](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter5.xhtml),
+	  you saw how to go forward from one permutation of values to the 
+	  following one, which suggests an even worse algorithm for sorting a 
+	  sequence: repeatedly attempting to produce the next permutation of the 
+	  elements until the algorithm fails because the last permutation was 
+	  reached and then reversing the sequence. For a random order, this 
+	  algorithm requires testing on average *n*! / 2 permutations, which 
+	  means its time is at least factorial. For almost any size, the algorithm
+	  becomes impossible to run because of its running time.
+	- ####  Bogosort
+	  
+	  The last algorithm derives its name from a portmanteau of the words *bogus* and *sort*,
+	  and it’s a probabilistic algorithm that sorts its input with 
+	  probability 1, but without any certainty as to its running time. The 
+	  idea also has to do with permutations: if the list to be sorted isn’t in
+	  order, it shuffles its elements randomly (we’ll look at such algorithms
+	  in [Chapter 8](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter8.xhtml))
+	  and tests again. If you were to apply this method to sorting a deck of 
+	  cards, the logic would be as follows: if the cards are not in order, 
+	  throw them into the air, pick them up, and check again—the odds of 
+	  getting it right are 1/52!, so roughly around one in a hundred million 
+	  million million million million million million million million million 
+	  million. Not good!
+	- ####  Sleep Sort
+	  
+	  The last sort is specifically meant for JavaScript, and 
+	  its running time depends on the maximum key to be sorted. It works with 
+	  numeric keys, and the idea is that if an input key is *K*, wait *K* seconds and output its value. After enough time has passed, all values will be output in order:
+	  
+	  ```
+	  const sleepSort = (arr) =>
+	  arr.forEach((v) => setTimeout(() => console.log(v), v * 1000));
+	  ```
+	  
+	  Even if this algorithm seems to work, with a sufficiently 
+	  large dataset, it may crash (too many timeouts waiting) or fail. The 
+	  algorithm goes through the list and starts to output numbers—think of 
+	  processing a list such as 1, 2, 2, 2, . . . , 2, 2, 0, and with enough 
+	  2s, the initial 1 may be output before the last 0 is processed.
+	- ###  Summary
+	  
+	  In this chapter we’ve explored several sorting 
+	  algorithms with different performance levels. In the next chapter, we’ll
+	  touch on a similar subject, the selection problem, which is akin to 
+	  sorting only part of an array, because instead of getting all elements 
+	  in order in their proper place, you care only about placing a single 
+	  element in its final place, not necessarily sorting the whole list.
+	- ###  Questions
+	  
+	  **6.1  Forced Reversal**
+	  
+	  Suppose you want to order a set of numbers in 
+	  descending order, but you have a sorting function that sorts only in 
+	  ascending order with no options whatsoever to change how it works. How 
+	  can you manage to sort your data as you wish?
+	  
+	  **6.2  Only Lower**
+	  
+	  Suppose you had a boolean function lower(a,b) that returns true if a is lower in sorting order than b and false otherwise. How can you use it to decide whether a is higher in sorting order than b? And how can you use it to see whether both keys are equal in order?
+	  
+	  **6.3  Testing a Sort Algorithm**
+	  
+	  Imagine you’re trying out a new sorting algorithm of your own. How would you test that it actually sorted correctly?
+	  
+	  **6.4  Missing ID**
+	  
+	  Imagine you got a set of six-digit IDs, but the count is under 1,000,000, so at least one ID is missing. How can you find one?
+	  
+	  **6.5  Unmatched One**
+	  
+	  Say you have an array with transaction 
+	  numbers, and each number should appear twice somewhere in the array, but
+	  you know there was a mistake, and there’s a single transaction that 
+	  appears only once. How do you detect it?
+	  
+	  **6.6  Sinking Sort**
+	  
+	  This is a variant of bubble sort. Instead of 
+	  starting at the bottom of the array and making higher values bubble to 
+	  the top, sinking sort starts at the top of the array and makes smaller 
+	  values sink to the bottom. In terms of performance, it’s the same as 
+	  bubble sort, but it may be used if you want to find only the *k* lowest elements of the array, as you’ll see in [Chapter 7](https://learning.oreilly.com/library/view/data-structures-and/9798341620001/xhtml/chapter7.xhtml). Can you implement sinking sort?
+	  
+	  **6.7  Bubble Swap Checking**
+	  
+	  Add a test to bubble sort after each pass 
+	  through the array to exit earlier if no swaps were detected. This test 
+	  will speed things up if you deal with arrays that were practically in 
+	  order and just a few swap passes get everything in its place.
+	  
+	  **6.8  Inserting Recursively**
+	  
+	  Can you implement insertion sort in a recursive way?
+	  
+	  **6.9  Stable Shell?**
+	  
+	  Is Shell sort stable?
+	  
+	  **6.10  A Dutch Enhancement**
+	  
+	  The Dutch National Flag Problem requires you 
+	  to arrange an array with elements that are either red, white, or blue, 
+	  so all red elements come first, followed by all white ones, and 
+	  finishing with all blue ones, as in the Dutch national flag. Show how 
+	  you may similarly enhance quicksort’s performance with repeated elements
+	  by rearranging the array to be sorted into three parts: all elements 
+	  less than the pivot, all elements equal to the pivot, and all elements 
+	  greater than the pivot. The middle part won’t need any further sorting.
+	  
+	  **6.11  Simpler Merging?**
+	  
+	  When merging halves in merge sort, you wrote the following (look specifically at the text in bold):
+	  
+	  ```
+	  for (let i = left; i <= right; i++) {
+	  if (ll !== arrL.length && (rr === arrR.length || **!arrR[ll] > arrL[rr]**)) {
+	    ...
+	  } else {
+	    ...
+	  }
+	  }
+	  ```
+	  
+	  Why is it written that way? You always want to 
+	  compare using the greater- than operator to be able to easily substitute
+	  a function for more complex comparisons, but why not write arr[rr]>arr[ll] instead?
+	  
+	  **6.12  Try Not to Be Negative**
+	  
+	  What happens with radix sort if some numbers 
+	  are negative? Also, what happens if you have noninteger values? Can you 
+	  do something about this?
+	  
+	  **6.13  Fill It Up!**
+	  
+	  In radix sort, imagine you wanted to initialize the buckets array with 10 empty arrays, and you did it as follows:
+	  
+	  ```
+	  const buckets = Array(10).fill(0).map(() => []);
+	  ```
+	  
+	  Why wouldn’t the following alternative work?
+	  
+	  ```
+	  const buckets = Array(10).fill([])
+	  ```
+	  
+	  And what about this other possibility?
+	  
+	  ```
+	  const buckets = Array(10).map(() => [])
+	  ```
+	  
+	  **6.14  What About Letters?**
+	  
+	  How would you modify radix sort to work with alphabetical strings?
+	-

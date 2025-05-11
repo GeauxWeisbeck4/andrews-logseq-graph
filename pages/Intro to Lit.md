@@ -13,4 +13,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		  to do the same thing. This is a matter of style. You can use 
 		  decorators—or not use decorators—in either language. For more 
 		  information, see [Decorators](https://lit.dev/docs/components/decorators/).
--
+			- ## `my-element.ts`
+				- ```typescript
+				  ```

@@ -57,4 +57,7 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 			- ```typescript
 			  <button @click=${this.handleClick}>Click me!</button>
 			  ```
-			-
+			- Here we've provided a name tag component with a message and an input element. In this step you'll use a declarative event listener so the 
+			  component can handle input events.
+		- ### Add a declarative event listener [1]
+		-

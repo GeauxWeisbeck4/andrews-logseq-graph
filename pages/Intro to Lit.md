@@ -33,4 +33,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Declare a reactive property [1]
 			- The code snippet above adds a string property called `message` to your element class. The `@property` decorator identifies it as a reactive property.
 		- ### Add an expression to your template [2]
-			-
+			- You can add dynamic values to your Lit templates with JavaScript expressions.
+		- ```typescript
+		  ```

@@ -62,5 +62,7 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Add a declarative event listener [1]
 			- This `@input` expression adds `this.changeName` as an event listener for the `input` event. (You can use this syntax for any event listener—just replace input with any event name and `this.changeName` with any JavaScript expression that evaluates to an event handler.)
 		- ### Add the event handler method [2]
-		-
-		-
+			- Since `name` is a reactive property, setting it in the event handler triggers the component to update.
+			- For more information about declarative event handlers, see [Events](https://lit.dev/docs/components/events/).
+				- ```typescript
+				  ```

@@ -210,4 +210,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- You can add *encapsulated styles* to a Lit component. Here the starting code is carried over from last step, but 
 		  we've added the ability to mark an item as completed by clicking on it.
 		- ### Add a static `styles` class field [1]
-			-
+			- Styles defined in the static styles class field are scoped to the component using shadow DOM. For more information, see [Styles](https://lit.dev/docs/components/styles/) and [Working with shadow DOM](https://lit.dev/docs/components/shadow-dom/).
+		- ### Add classes to your items template
+		-

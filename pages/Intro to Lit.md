@@ -28,4 +28,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 				  }
 				  
 				  ```
--
+	- ## Properties and Expressions
+		- Lit components can have reactive properties -> changing one trigers the component to update -> we can declare a reactive property and use it in an expression in the component's template.
+		- ### Declare a reactive property [1]

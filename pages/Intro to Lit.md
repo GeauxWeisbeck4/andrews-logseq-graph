@@ -35,4 +35,26 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Add an expression to your template [2]
 			- You can add dynamic values to your Lit templates with JavaScript expressions.
 		- ```typescript
+		  import {LitElement, html} from 'lit';
+		  import {customElement, property} from 'lit/decorators.js';
+		  
+		  @customElement('my-element')
+		  export class MyElement extends LitElement {
+		  // TODO: Add a reactive property
+		    @property()							// [1]
+		    message: string = 'Hello again.';		// [1]
+		  
+		    render() {
+		      return html`
+		        <p>${this.message}</p>			// [2]
+		      `;
+		    }
+		  }
+		  
 		  ```
+	- ## Declarative Event Listeners
+		- To add interactivity to your components, you'll probably want to add some event handlers. Lit makes it easy to add a *declarative* event listener in the template, using an expression like this:
+			- ```typescript
+			  <button @click=${this.handleClick}>Click me!</button>
+			  ```
+			-

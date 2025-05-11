@@ -170,3 +170,39 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 			  creates a new array that includes the new item. Using this immutable 
 			  data pattern ensures that the components see the new data. For more 
 			  information, see [Mutating objects and arrays](https://lit.dev/docs/components/properties/#mutating-properties).
+				- ```typescript
+				  import {LitElement, html} from 'lit';
+				  import {customElement, state, query} from 'lit/decorators.js';
+				  
+				  @customElement('todo-list')
+				  export class ToDoList extends LitElement {
+				    @state()
+				    private _listItems = [
+				      { text: 'Start Lit tutorial', completed: true },
+				      { text: 'Make to-do list', completed: false }
+				    ];
+				  
+				    render() {
+				      return html`
+				        <h2>To Do</h2>
+				        <ul>
+				          ${this._listItems.map((item) =>		// [1]
+				            html`<li>${item.text}</li>`)}		// [1]
+				        </ul>
+				        <input id="newitem" aria-label="New item">
+				        <button @click=${this.addToDo}>Add</button>
+				      `;
+				    }
+				  
+				    @query('#newitem')					// [2] and rest of code
+				    input!: HTMLInputElement;
+				  
+				    addToDo() {
+				      this._listItems = [...this._listItems,
+				          {text: this.input.value, completed: false}];
+				      this.input.value = '';
+				    }
+				  }
+				  
+				  
+				  ```

@@ -285,12 +285,97 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 			- The end result should look like this:
 			- return html`
 			- <h2>To Do</h2>
-			- ${todosOrMessage}
-			- <input id="newitem" aria-label="New item">
-			- ...
+			- `${todosOrMessage}`
 			- Try clicking Hide completed and make sure your code worked. Go ahead and cross off Complete Lit tutorial. (If anything's not working, check your work or click Solve to see the finished code.)
 			  Next steps
 			- To keep exploring Lit, try one of these tutorials:
 			- Working with lists explores repeating templates in more detail.
 			    Reactivity takes a deeper dive into reactive properties and how Lit components update.
 			- If you'd like to see more interactive samples and keep experimenting with Lit online, you can head over to the Playground. Or if you're ready to try something real, you might want to check out our component Starter kits or add Lit to an existing project.
+				- ```typescript
+				  import {LitElement, html, css} from 'lit';
+				  import {customElement, state, property, query} from 'lit/decorators.js';
+				  
+				  type ToDoItem = {
+				    text: string,
+				    completed: boolean
+				  };
+				  
+				  @customElement('todo-list')
+				  export class ToDoList extends LitElement {
+				    static styles = css`
+				      .completed {
+				        text-decoration-line: line-through;
+				        color: #777;
+				      }
+				    `;
+				  
+				    @state()
+				    private _listItems = [
+				    { text: 'Make to-do list', completed: true },
+				      { text: 'Complete Lit tutorial', completed: false }
+				    ];
+				    @property()
+				    hideCompleted = false;
+				  
+				    render() {
+				      const items = this.hideCompleted
+				        ? this._listItems.filter((item) => !item.completed)
+				        : this._listItems;
+				      const todos = html`
+				        <ul>
+				          ${items.map((item) =>
+				              html`
+				                <li
+				                    class=${item.completed ? 'completed' : ''}
+				                    @click=${() => this.toggleCompleted(item)}>
+				                  ${item.text}
+				                </li>`
+				          )}
+				        </ul>
+				      `;
+				      const caughtUpMessage = html`
+				        <p>
+				        You're all caught up!
+				        </p>
+				      `;
+				      const todosOrMessage = items.length > 0
+				        ? todos
+				        : caughtUpMessage;
+				  
+				      return html`
+				        <h2>To Do</h2>
+				        ${todosOrMessage}
+				        <input id="newitem" aria-label="New item">
+				        <button @click=${this.addToDo}>Add</button>
+				        <br>
+				        <label>
+				          <input type="checkbox"
+				            @change=${this.setHideCompleted}
+				            ?checked=${this.hideCompleted}>
+				          Hide completed
+				        </label>
+				      `;
+				    }
+				  
+				    toggleCompleted(item: ToDoItem) {
+				      item.completed = !item.completed;
+				      this.requestUpdate();
+				    }
+				  
+				    setHideCompleted(e: Event) {
+				      this.hideCompleted = (e.target as HTMLInputElement).checked;
+				    }
+				  
+				    @query('#newitem')
+				    input!: HTMLInputElement;
+				  
+				    addToDo() {
+				      this._listItems = [...this._listItems,
+				          {text: this.input.value, completed: false}];
+				      this.input.value = '';
+				    }
+				  }
+				  
+				  
+				  ```

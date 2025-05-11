@@ -157,4 +157,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		  more information, see [Public properties and internal state](https://lit.dev/docs/components/properties/#public-properties-and-internal-state).
 		- You can use standard JavaScript in Lit expressions to create conditional or repeating templates. In this step, you'll use `map()` to turn an array of data into a repeating template.
 		- ### Render list items [1]
+			- Note the nested `html` inside the `map()` callback. For more information, see [Lists and repeating templates](https://lit.dev/docs/templates/lists/).
+		- ### Add the click handler [2]
 			-

@@ -93,5 +93,6 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		  nodes) and add an event listener. You can also use expressions to set 
 		  attributes or properties.
 		- ### Find the text input and add this expression [1]
-			-
--
+			- The `?attributeName` syntax tells Lit you want to set or remove a boolean attribute based on the value of the expression
+			- There are five common positions for expressions in Lit templates
+				-

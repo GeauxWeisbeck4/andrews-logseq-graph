@@ -95,4 +95,55 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Find the text input and add this expression [1]
 			- The `?attributeName` syntax tells Lit you want to set or remove a boolean attribute based on the value of the expression
 			- There are five common positions for expressions in Lit templates
-				-
+				- ```typescript
+				  <!-- Child nodes -->
+				  
+				  <h1>${this.pageTitle}</h1>
+				  
+				  
+				  <!-- Attribute -->
+				  
+				  <div class=${this.myTheme}></div>
+				  
+				  
+				  <!-- Boolean attribute -->
+				  
+				  <p ?hidden=${this.isHidden}>I may be in hiding.</p>
+				  
+				  
+				  <!-- Property -->
+				  
+				  <input .value=${this.value}>
+				  
+				  
+				  <!-- Event listener -->
+				  
+				  <button @click=${() => {console.log("You clicked a button.")}}>...</button>
+				  ```
+				- For more information, see [Expressions](https://lit.dev/docs/templates/expressions/).
+				- ```typescript
+				  import {LitElement, html} from 'lit';
+				  import {customElement, property} from 'lit/decorators.js';
+				  
+				  @customElement('more-expressions')
+				  export class MoreExpressions extends LitElement {
+				    @property()
+				    checked: boolean = false;
+				  
+				    render() {
+				      return html`
+				        <div>
+				           <!-- TODO: Add expression to input. -->
+				           <input type="text" value="Hello there." ?disable=${!this.checked}> // [1]
+				        </div>
+				        <label><input type="checkbox" @change=${this.setChecked}> Enable editing</label>
+				      `;
+				    }
+				  
+				    setChecked(event: Event) {
+				      this.checked = (event.target as HTMLInputElement).checked;
+				    }
+				  }
+				  
+				  ```
+	-

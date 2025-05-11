@@ -214,5 +214,66 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Add classes to your items template [2]
 			- A ternary expression is a handy way of adding conditional logic to a template. If you want to set more than one class at a time, you can use Lit's classMap directive, instead.
 				- ```typescript
+				  import {LitElement, html, css} from 'lit';
+				  import {customElement, state, query} from 'lit/decorators.js';
+				  
+				  type ToDoItem = {
+				    text: string,
+				    completed: boolean
+				  }
+				  
+				  @customElement('todo-list')
+				  export class ToDoList extends LitElement {
+				    static styles = css`							// [1]
+				      .completed {
+				        text-decoration-line: line-through;
+				        color: #777;
+				      }
+				    `;
+				  
+				    @state()
+				    private _listItems = [
+				      { text: 'Make to-do list', completed: true },
+				      { text: 'Add some styles', completed: true }
+				    ];
+				  
+				    render() {
+				      return html`
+				        <h2>To Do</h2>
+				        <ul>
+				          ${this._listItems.map((item) =>
+				            html`
+				              <li
+				                  class=${item.completed ? 'completed' : ''} 	// [2]
+				                  @click=${() => this.toggleCompleted(item)}>
+				                ${item.text}
+				              </li>`
+				          )}
+				        </ul>
+				        <input id="newitem" aria-label="New item">
+				        <button @click=${this.addToDo}>Add</button>
+				      `;
+				    }
+				  
+				    toggleCompleted(item: ToDoItem) {
+				      item.completed = !item.completed;
+				      this.requestUpdate();
+				    }
+				  
+				    @query('#newitem')
+				    input!: HTMLInputElement;
+				  
+				    addToDo() {
+				      this._listItems = [...this._listItems,
+				          {text: this.input.value, completed: false}];
+				      this.input.value = '';
+				    }
+				  }
+				  
 				  ```
-		-
+	- ## Finishing Touches
+		- As templates get big and complicated, it can help to break them down into smaller pieces. Here we've added a **Hide completed** checkbox to the to-do list. We've also pulled the main todo list template out into a separate local constant, todos. You can think of this as a partial template.
+		- You'll notice the todos partial is *almost* identical to the <ul> element in the previous step, except that it's using the new items local constant instead of this._listItems.
+		- Your mission: refactor the template to hide the completed items when **Hide completed** is checked and show a message when no uncompleted items are displayed.
+		- ### Calculate the items to display [1]
+			-

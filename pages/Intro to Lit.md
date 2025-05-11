@@ -159,4 +159,14 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		- ### Render list items [1]
 			- Note the nested `html` inside the `map()` callback. For more information, see [Lists and repeating templates](https://lit.dev/docs/templates/lists/).
 		- ### Add the click handler [2]
-			-
+			- The @query decorator (used in the TypeScript version of the code) is a handy way of getting a reference to a node in your component's internal DOM. It's equivalent to this code in the JavaScript version:
+				- ```typescript
+				  - get input() {
+				  - 	return this.renderRoot?.querySelector('#newitem') ?? null;
+				  - }
+				  ```
+			- > **Mutating objects and arrays.** 
+			  > Note that instead of mutating the _listItems array, addToDo()
+			  creates a new array that includes the new item. Using this immutable 
+			  data pattern ensures that the components see the new data. For more 
+			  information, see [Mutating objects and arrays](https://lit.dev/docs/components/properties/#mutating-properties).

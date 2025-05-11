@@ -15,4 +15,17 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 		  information, see [Decorators](https://lit.dev/docs/components/decorators/).
 			- ## `my-element.ts`
 				- ```typescript
+				  import {LitElement, html} from 'lit';
+				  import {customElement} from 'lit/decorators.js';
+				  
+				  @customElement('my-element')					// [1]
+				  export class MyElement extends LitElement {     // [1]
+				    render() {									// [2]
+				      return html`								// [2]
+				        <p>Hello world! From my-element.</p>		// [2]
+				      `;											// [2]
+				    }
+				  }
+				  
 				  ```
+-

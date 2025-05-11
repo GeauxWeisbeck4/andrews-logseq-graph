@@ -60,4 +60,7 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 			- Here we've provided a name tag component with a message and an input element. In this step you'll use a declarative event listener so the 
 			  component can handle input events.
 		- ### Add a declarative event listener [1]
+			- This `@input` expression adds `this.changeName` as an event listener for the `input` event. (You can use this syntax for any event listener—just replace input with any event name and `this.changeName` with any JavaScript expression that evaluates to an event handler.)
+		- ### Add the event handler method [2]
+		-
 		-

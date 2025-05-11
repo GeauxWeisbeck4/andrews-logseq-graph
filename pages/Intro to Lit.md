@@ -206,3 +206,8 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 				  
 				  
 				  ```
+	- ## Styles
+		- You can add *encapsulated styles* to a Lit component. Here the starting code is carried over from last step, but 
+		  we've added the ability to mark an item as completed by clicking on it.
+		- ### Add a static `styles` class field [1]
+			-

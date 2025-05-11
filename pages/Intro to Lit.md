@@ -146,4 +146,15 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 				  }
 				  
 				  ```
-	-
+	- ## Template Logic
+		- Now that you've got some of the basics, we'll introduce a more 
+		  complicated element. In the remainder of this tutorial, you'll build a 
+		  to-do list component. Here we've provided some of the boilerplate for 
+		  your to-do-list.
+		- Since the list items are private to the component, the `_listItems` property is defined as *internal reactive state*.
+		  It works just like a reactive property, but it isn't exposed as an 
+		  attribute, and shouldn't be accessed from outside the component. For 
+		  more information, see [Public properties and internal state](https://lit.dev/docs/components/properties/#public-properties-and-internal-state).
+		- You can use standard JavaScript in Lit expressions to create conditional or repeating templates. In this step, you'll use `map()` to turn an array of data into a repeating template.
+		- ### Render list items [1]
+			-

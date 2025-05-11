@@ -65,4 +65,33 @@ tags:: Web Components, Lit, UI Design, JavaScript, Typescript
 			- Since `name` is a reactive property, setting it in the event handler triggers the component to update.
 			- For more information about declarative event handlers, see [Events](https://lit.dev/docs/components/events/).
 				- ```typescript
+				  import {LitElement, html} from 'lit';
+				  import {customElement, property} from 'lit/decorators.js';
+				  
+				  @customElement('name-tag')
+				  export class NameTag extends LitElement {
+				    @property()
+				    name: string = 'Your name here';
+				  
+				    render() {
+				      // TODO: Add declarative event listener to input.
+				      return html`
+				        <p>Hello, ${this.name}</p>
+				        <input @input=${this.changeName} placeholder="Enter your name">  // [1]
+				      `;
+				    }
+				  
+				    // TODO: Add event handler method.
+				    changeName(event: Event) {							// [2]
+				      const input = event.target as HTMLInputElement;		// [2]
+				      this.name = input.value;							// [2]
+				    }
+				  }
 				  ```
+	- ## More Expressions
+		- On the previous pages you used expressions to add text content (child 
+		  nodes) and add an event listener. You can also use expressions to set 
+		  attributes or properties.
+		- ### Find the text input and add this expression [1]
+			-
+-

@@ -55,5 +55,7 @@ tags:: Software Design, OOP, Class, Python
 		- Arguments -> The values passed into a function
 		- Parameters -> Names we use to refer to values passed into a function
 	- ## Section 2.3: Arguments
-		- So we don't have to put each argument in, the easier way in python is to use * to capture any "extra" values passed to the function that don't lined up with
+		- So we don't have to put each argument in, the easier way in python is to use * to capture any "extra" values passed to the function that don't lined up with named parameters. Define a parameter with two leading stars ** we capture any extra named parameters.
+			- We call this varargs
+		- We can also use spreading to take a list or dictionary
 	-

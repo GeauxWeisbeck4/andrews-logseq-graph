@@ -40,3 +40,4 @@ tags:: Software Design, Python
   then we can avoid byte-by-byte comparisons entirely.
 	- ## Section 3.1: Getting Started
 		- We’ll start by implementing the inefficient  approach so that we can compare our later designs to it.
+		-

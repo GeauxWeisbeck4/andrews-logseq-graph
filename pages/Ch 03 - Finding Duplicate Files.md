@@ -41,4 +41,5 @@ tags:: Software Design, Python
 	- ## Section 3.1: Getting Started
 		- We’ll start by implementing the inefficient  approach so that we can compare our later designs to it.
 	- ## Section 3.2: Hashing Files
-		- Rather than comparing every file against each other, we'll process each file once to produce a unique identif
+		- Rather than comparing every file against each other, we'll process each file once to produce a unique identifier that depends only on the file's contents and then only compare files that have the same identifier
+		- If every file is

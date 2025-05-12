@@ -4,4 +4,5 @@ tags:: Software Design, Python, Programming Books
 - author:: Greg Wilson
 - # Software Design By Example - Python
 	- ## [[Ch 02 - Objects and Classes]]
+	- ## [[Ch 03 - Finding Duplicate Files]]
 	-

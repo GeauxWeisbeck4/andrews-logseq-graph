@@ -52,5 +52,8 @@ tags:: Software Design, OOP, Class, Python
 		- We can use classes to ensure every object has similar behavior
 			- ![image.png](../assets/image_1747052853015_0.png)
 		- Calling a method involves one more lookup because we go from the object to the class to the method, calling the "method" with the object as the first argument
-	-
+		- Arguments -> The values passed into a function
+		- Parameters -> Names we use to refer to values passed into a function
+	- ## Section 2.3: Arguments
+		-
 	-

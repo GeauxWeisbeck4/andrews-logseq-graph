@@ -48,5 +48,7 @@ tags:: Software Design, OOP, Class, Python
 		  We can think of an object as a special kind of dictionary.
 		  A method is just a function that takes an object of the right kind
 		  as its first parameter (typically called `self` in Python).
-	- ## Section 2.2
+	- ## Section 2.2: Classes
+		- We can use classes to ensure every object has similar behavior
+		-
 	-

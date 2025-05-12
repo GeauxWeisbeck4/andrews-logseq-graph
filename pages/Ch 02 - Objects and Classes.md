@@ -57,5 +57,6 @@ tags:: Software Design, OOP, Class, Python
 	- ## Section 2.3: Arguments
 		- So we don't have to put each argument in, the easier way in python is to use * to capture any "extra" values passed to the function that don't lined up with named parameters. Define a parameter with two leading stars ** we capture any extra named parameters.
 			- We call this varargs
-		- We can also use spreading to take a list or dictionary
+		- We can also use spreading to take a list or dictionary full of arguments and spread them out in a call to match a functions parameters
+		-
 	-

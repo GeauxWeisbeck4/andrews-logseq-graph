@@ -50,5 +50,6 @@ tags:: Software Design, OOP, Class, Python
 		  as its first parameter (typically called `self` in Python).
 	- ## Section 2.2: Classes
 		- We can use classes to ensure every object has similar behavior
+			- ![image.png](../assets/image_1747052853015_0.png)
 		-
 	-

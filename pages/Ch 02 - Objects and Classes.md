@@ -55,5 +55,5 @@ tags:: Software Design, OOP, Class, Python
 		- Arguments -> The values passed into a function
 		- Parameters -> Names we use to refer to values passed into a function
 	- ## Section 2.3: Arguments
-		-
+		- So we don't have to put each argument in, the easier way in python is to use * to capture any "extra" values passed to the function that don't lined up with
 	-

@@ -39,4 +39,7 @@ tags:: Software Design, Python
   if we are very clever about how we generate identifiers
   then we can avoid byte-by-byte comparisons entirely.
 	- ## Section 3.1: Getting Started
-		-
+		- We’ll start by implementing the inefficient  approach so that we can compare our later designs to it.
+		  The short program below takes a list of filenames from the command line,
+		  finds duplicates,
+		  and prints the matches:

@@ -40,4 +40,5 @@ tags:: Software Design, Python
   then we can avoid byte-by-byte comparisons entirely.
 	- ## Section 3.1: Getting Started
 		- We’ll start by implementing the inefficient  approach so that we can compare our later designs to it.
-	-
+	- ## Section 3.2: Hashing Files
+		- Rather than comparing every file against each other, we'll process each file once to produce a unique identif
